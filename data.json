@@ -1,0 +1,199 @@
+[
+    {
+        "id": 1, 
+        "name": "Г/Ц Блинчики с мясом вес, Россия", 
+        "price": 50.50,
+        "price_with_card": 40.40,
+        "currency": "₽",
+        "img": "https://th.bing.com/th/id/R.bd2574c2d204067f977940d79c5ee579?rik=CydB3voAhi05Eg&riu=http%3a%2f%2fimg.povar.ru%2fuploads%2fa3%2fa6%2f92%2f31%2fblinchiki_s_myasom-33517.jpg&ehk=xQxDdpSZ5NrB6jL8Xaj1dClGYhNORtU5U3M9S%2fgUnHA%3d&risl=&pid=ImgRaw&r=0",
+        "category": "Акции",
+        "images": [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS26iX4CTrzk43Fju1gJATHdV3W2lsTchtnSQ&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAHaU5eYzIl1Bos1_mCsRnvoNbKE-BpntHfg&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLOw1Qm8YD7_7FjVEqJAW4xEFH9IgVjsGWiw&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ29TKPXXAgyNuwF9x5xS552P6haTA9qS_EGg&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_2fPwfJzEliQ8fZqAO4Gona82wPuPoHEz3Q&s"
+        ],
+        "rating": "https://zpatky.files.wordpress.com/2019/08/hvezdy-2.jpg",
+        "discount": "-50%" 
+    },
+    {
+        "id": 2, 
+        "name": "Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...", 
+        "price": 50.50,
+        "price_with_card": 40.40,
+        "currency": "₽",
+        "img": "https://th.bing.com/th/id/R.822303c7b9e29f89078143c4bf223eec?rik=00syf5lZRvfi1w&pid=ImgRaw&r=0",
+        "category": "Акции",
+        "images": [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt_iMMC8TTlxfHFLrtbThx35ENA-OmhsQULw&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC2wnFZQqIDcRgyEXCyyK7apNfYGU3xduPOQ&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbpMGn2OiGQ_x2L-IASsfYg_LDL0FtEQcydA&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ29TKPXXAgyNuwF9x5xS552P6haTA9qS_EGg&s",
+            "https://komandor-img.storage.yandexcloud.net/1000/141052_2.jpg?v=1756267254"
+        ],
+        "rating": "https://2.bp.blogspot.com/-_9QVbGMdzWk/Vbxv5HAuhNI/AAAAAAAABKg/gTwmIMsYnuU/s1600/06.%2BRating-Tres-estrelas.png",
+        "discount": "-50%" 
+    },
+    {
+        "id": 3, 
+        "name": "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...", 
+        "price": 50.50,
+        "price_with_card": 40.40,
+        "currency": "₽",
+        "img": "https://tse1.explicit.bing.net/th/id/OIP.RrikYRdKFGFKscm0hDtwhgHaHa?r=0&cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3",
+        "category": "Акции",
+        "images": [
+            "https://media.vprok.ru/products/x700/dd/km/qpyv7ovrxabita4epaa7hfxjel3wkmdd.jpeg",
+            "https://tomall.ru/allmarket/foto/1755/457.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUmu7OU3u37ZS2RlLXxTWSSSC1hiwTrDoRHfgVpp4FqxaZoO-lXsq6gD6hRIpSLdEm6Fc&usqp=CAU",
+            "https://www.magazinnoff.ru/images/tovary/954759.webp",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuUAiWmoYpWL33qILYrDNUwYp7v9HySgViww&s"
+        ],
+        "rating": "https://th.bing.com/th/id/R.46e47e0e12b296d42130293936e4a464?rik=hYQ%2b%2fmix%2fEB4%2bQ&riu=http%3a%2f%2fclipart-library.com%2fimgs%2fgceoXx7gi.png&ehk=bqfSs1APoxsd8Bzk%2f%2b7pOY%2fVQiUvSuvEDFD26bdhaFc%3d&risl=&pid=ImgRaw&r=0",
+        "discount": "-50%" 
+    },
+    { 
+        "id": 4, 
+        "name": "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
+        "price": 50.50,
+        "price_with_card": 40.40,
+        "currency": "₽",
+        "img": "https://tse1.explicit.bing.net/th/id/OIP.iMfLG5P3IputJTyY4OFxlQHaKd?r=0&cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3",
+        "category": "Акции",
+        "images": [
+            "https://tsx.x5static.net/i/800x800-fit/xdelivery/files/59/11/a6b21dce892bf6fcfb660c6d3f76.jpg",
+            "https://media.vprok.ru/products/x700/n7/ps/7wjn5fptubn3mvloanty3uauynrgpsn7.jpeg",
+
+
+"https://media.vprok.ru/products/x700/6p/kp/xhl7tx4wlk4vel2vjkuiec4jdfx2kp6p.jpeg",
+            "https://media.vprok.ru/products/x700/ga/ct/7rk5tidglgjshndmxfp4jg6qvkwqctga.jpeg",
+            "https://tsx.x5static.net/i/800x800-fit/xdelivery/files/23/ff/05d7ae8dxd09bda41f01a75ca36d.jpg"
+
+        ],
+        "rating": "https://cdn.prod.website-files.com/58d684124f3644b01d649b26/609aa24b372bb6717b0b0d30_608ace196c1fdf8a2ea9e084_reviews-stars.jpeg",
+        "discount": "-50%" 
+    },
+    {
+        "id": 5, 
+        "name": "Масло ПРОСТОКВАШИНО сливочное в/с 82% фольга без змж, Россия, 180 г", 
+        "price": 192.99,
+        "currency": "₽",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh26cxlmAHxG3fMAdh_K_haIvUFooUWuZbEQ&s",
+        "category": "Новинки",
+        "images":[
+            "https://storage.delikateska.ru/cache/2/0/42e118d0-6595-4414-94a7-44261c89074b.jpg/w400h400.webp",
+            "https://prostokvashino.ru/upload/resize_cache/iblock/a37/640_640_0/zxbukg9s6eglgd4vjtcv31g8ypragpl7.png",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcwe8Hm5T_ewDYgUF11pFx0JRtTVUonghQXQ&s",
+            "https://hleb-konditera.by/upload/iblock/4d8/l70o9mk33jnmcwzkf6v0ec7y6mb8dud9.jpg",
+            "https://i.siteapi.org/Ljbf2JpBi3iRDaCBmqYfIVeMB3g=/fit-in/330x/top/4a5b11582fb5509.ru.s.siteapi.org/img/cac3a315f806a4bd26c4aec35b824cd6a49a6546.jpg"
+        ],
+        "rating": "https://zpatky.files.wordpress.com/2019/08/hvezdy-2.jpg"
+    },
+    {   
+        "id": 6, 
+        "name": "Йогурт Fruttis маракуя-ананс, Россия", 
+        "price": 22.99,
+        "currency": "₽",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSevmt_YfLfsIs_D8xkG6lI2WJk2yZvGYlwiA&s",
+        "category": "Избраное",
+        "images": [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTARWjHx_sJ3xTjV22P8i9iVZikoxoV-AWwtNBNmnWP7D4Behk9k2YBAKvZVCFkHDr7lwU&usqp=CAU",
+            "https://tomall.ru/allmarket/foto/1755/457.jpg",
+            "https://goods-photos.static1-sima-land.com/items/4284537/0/1600.jpg?v=1681990512",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPvrhfXfybZzaL8qPiIdcLW88I6WRJ-6uCyhDDU8yEHzhvR09PpZBtKskmY4FRrwkRRyY&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRn8ARoDicwL9D67nJmNH3yn_GrZc3ikJJpn56ERhNhfj3SDcZtm192Gj_-hkEbM9Kk28&usqp=CAUs"
+        ],
+        "rating": "https://th.bing.com/th/id/R.46e47e0e12b296d42130293936e4a464?rik=hYQ%2b%2fmix%2fEB4%2bQ&riu=http%3a%2f%2fclipart-library.com%2fimgs%2fgceoXx7gi.png&ehk=bqfSs1APoxsd8Bzk%2f%2b7pOY%2fVQiUvSuvEDFD26bdhaFc%3d&risl=&pid=ImgRaw&r=0"
+    },
+    {
+        "id": 7, 
+        "name": "Йогурт Fruttis вишня-черника, Россия", 
+        "price": 159.99,
+        "currency": "₽",
+        "img": "https://tsx.x5static.net/i/800x800-fit/xdelivery/files/a0/93/a5eebc818345c4159f05982947ea.jpg",
+        "category": "Новинки",
+        "images":[
+            "https://palladi.ru/upload/iblock/332/33215545cc210b5ae7d1ad0de513d951.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVT_AkDUPTXYNWZuIEJokS7fyF3AV_vhvzUq6ZOqI1j5AMyLBffos2XmrOze33KwHyNAA&usqp=CAU",
+            "https://da-mart.ru/storage/catalog/77007af96fce776486d4e2f9bd74e74f.w220h220.jpg",
+            "hhttps://static.insales-cdn.com/images/products/1/1632/176793184/38e999f41b5f.jpg",
+            "https://agrokomplexshop.ru/upload/iblock/11c/31697_1.jpg"
+        ],
+        "rating": "https://zpatky.files.wordpress.com/2019/08/hvezdy-2.jpg"
+    },
+    {
+        "id": 8, 
+        "name": "Йогурт Fruttis вишня-черника, Россия", 
+        "price": 29.99,
+        "currency": "₽",
+         "img": "https://tsx.x5static.net/i/800x800-fit/xdelivery/files/a0/93/a5eebc818345c4159f05982947ea.jpg",
+
+
+"category": "Новинки",
+        "images":[
+            "https://palladi.ru/upload/iblock/332/33215545cc210b5ae7d1ad0de513d951.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVT_AkDUPTXYNWZuIEJokS7fyF3AV_vhvzUq6ZOqI1j5AMyLBffos2XmrOze33KwHyNAA&usqp=CAU",
+            "https://da-mart.ru/storage/catalog/77007af96fce776486d4e2f9bd74e74f.w220h220.jpg",
+            "hhttps://static.insales-cdn.com/images/products/1/1632/176793184/38e999f41b5f.jpg",
+            "https://agrokomplexshop.ru/upload/iblock/11c/31697_1.jpg"
+        ],
+        "rating": "https://zpatky.files.wordpress.com/2019/08/hvezdy-2.jpg"
+    },
+    {"id": 9, 
+        "name": "Молоко сгущенное РОГАЧЕВ Егорка, цельное с сахаром...", 
+        "price": 69.99,
+        "currency": "₽",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkI9kF5fNcGHUCC_y6Gw4DKWN5fQWQDaaRrA&s",
+        "category": "Избраное",
+        "images":[
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Q2ygE8efsJ7JHf_ObYp4CkgG97Dyw_TUb6AtkpPYqkY5gZj4vl9qLHAHVPu7PjUScFM&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuHMeS-o9-tYUWJQ9LbbYMfCh1oM2KhoXJtQ&s",
+            "https://basket-13.wbbasket.ru/vol1964/part196435/196435178/images/big/1.webp",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhEHz04XIhm1cW3WJJTFlRQ6iu-Fw7lm9SDg&s"
+        ],
+        "rating": "https://zpatky.files.wordpress.com/2019/08/hvezdy-2.jpg"
+    },
+    {
+        "id": 10, 
+        "name": "Крем-сыр с голубой плесенью", 
+        "price": 139.99,
+        "currency": "₽",
+        "img": "https://gastronomia.by/upload/iblock/28c/b2nxntt3eoh4zntf5qil0awnt461bog8.jpg",
+        "category": "Покупали раньше",
+        "images":[
+            "hhttps://cdn-irec.r-99.com/sites/default/files/imagecache/copyright/user-images/2216965/uNrELEpt8laVjMgXSDxxjg.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKA8uSXSHMW2a-qhzxbJ508V04CMqISJX1dNqLy4SisDDSHHmxCeP66BgAdpi7UE6BkXA&usqp=CAU",
+            "https://yastatic.net/avatars/get-grocery-goods/2998515/e575ab12-9f8e-4793-a4e3-2b8c8738a0e0/300x300?webp=true",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV3fCMBRSWmJ_YK2MSz1YenRdwVpvjn35hvp-nAW_mYlrVOWWz9TWCq5LSICpaWUB0w7M&usqp=CAU",
+            "https://www.magazinnoff.ru/images/tovary/3191953.webp"
+        ],
+        "rating": "https://zpatky.files.wordpress.com/2019/08/hvezdy-2.jpg"
+    },
+    {
+        "id": 11, 
+        "name": "Ветчина-Питерская", 
+        "price": 599.99,
+        "currency": "₽",
+        "img": "https://media.vprok.ru/products/x700/52/23/sqmhqcfswc4zb4ymg3p5oi4u5udv2352.jpeg",
+        "category": "Покупали раньше",
+        "images":[
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWLlhLaHuVY2vNbdOuR6q51jjFLT0Gzfybig9aUqXpaYhwuMtdqun-M2oTyf7-tzmYauU&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_DIxLFQLGjITcgiA7hEPPQ5a40ZUINxsh9Atd3Qgrs8nPA20JzDLDxYIIUnHhpjsp9ww&usqp=CAU",
+            "https://cdn.lentochka.lenta.com/resample/webp/500x500/photo/369271/b0c9e64b-318e-4416-acb8-2893c09e5db9.pngs",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmQuhdghTOBlXOvl3cH5PDulPsGh6Ob7O5vtZP2Fvfzy7105peq-P4kzfqMppto4lD9gE&usqp=CAU",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWXbwzt6xLj2W78H71BDFcCSqLMnO75oDR0LcVpYS_3F7dHW2fTRZG1XTf_DLNNnM6H6I&usqp=CAU"
+        ],
+        "rating": "https://zpatky.files.wordpress.com/2019/08/hvezdy-2.jpg"
+    },
+    {
+        "id": 12, 
+        "name": "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»", 
+        "price": 49.34,
+        "currency": "₽",
+        "img": "https://th.bing.com/th/id/R.822303c7b9e29f89078143c4bf223eec?rik=00syf5lZRvfi1w&pid=ImgRaw&r=0",
+        "category": "Покупали раньше",
+        "rating": "https://zpatky.files.wordpress.com/2019/08/hvezdy-2.jpg"
+    }
+
+]
