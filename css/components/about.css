@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 main {
     background-color: #F9F4E2;
     max-width: 1440px;
@@ -16,6 +17,11 @@ main {
     padding: 24px 116px 4px 116px;
 
  }
+=======
+.container-company {
+    padding: 24px 116px 116px 80px ;
+}
+>>>>>>> ddb4dd5b53760da78225a12893d035ef74ef3aa6
 .transition {
     display: flex;
     gap: 16px;
@@ -36,4 +42,8 @@ font-size: 12px;
 line-height: 150%;
 color: #8F8F8F;
 text-decoration: none;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ddb4dd5b53760da78225a12893d035ef74ef3aa6
