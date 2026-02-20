@@ -5,9 +5,17 @@
     box-sizing: border-box;
 }
 
-.container-company {
-    padding: 24px 116px 116px 80px ;
+main {
+    background-color: #F9F4E2;
+    max-width: 1440px;
+    width: 100%;
+    height: 869px;
 }
+
+ .block-company{
+    padding: 24px 116px 4px 116px;
+
+ }
 .transition {
     display: flex;
     gap: 16px;
