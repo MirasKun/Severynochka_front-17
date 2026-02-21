@@ -5,8 +5,11 @@ margin: 0;
 box-sizing: border-box;
 }
 
+body {
+     background-color: #fcf9eb;
+}
+
 main {
-    background-color: #fcf9eb;
     max-width: 1440px;
     width: 100%;
     font-family: Rubik;

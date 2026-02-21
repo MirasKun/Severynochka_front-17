@@ -4,11 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/components/contacts.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components/header.css">
     <title>Контакты</title>
 </head>
 <body>
-    
+<header>
+        <div class="container">
+            <div class="wrapper-header">
+                    <div class="logo">
+                        <img src="../assets/icons/logo.svg" alt="logo">
+                    </div>
 
+                <div class="input-box">
+                    <input id="search_input" type="text" placeholder="Найти товар">
+                    <div class="search-icon-wrap">
+                        <img class="search_icon" src="../assets/icons/search.svg" alt="Лупа">
+                    </div>
+                </div>
+
+                <nav class="right-nav">
+                    <div class="favorite-wrap">
+                        <div class="favorite">
+                            <img src="../assets/icons/heart.svg" alt="Избранное">
+                        </div>
+                        <p>Избранное</p>
+                    </div>
+                    <div class="busket-wrap">
+                        <div class="count-view" id="count-view" hidden>1</div>
+                        <div class="busket">
+                            <img src="../assets/icons/shopping-cart.svg" alt="">
+                        </div>
+                        <p>Корзина</p>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
     <main>
             <div class="container-contacts">
                 <div class="transition-contact">

@@ -5,14 +5,17 @@ margin: 0;
 box-sizing: border-box;
 }
 
+body {
+     background-color: #fcf9eb;
+}
+
 main {
-    background-color: #fcf9eb;
     max-width: 1440px;
     width: 100%;
     font-family: Rubik;
 }
 .container-contacts {
-    padding: 24px 116px 0px 116px ;
+    padding: 24px 116px 80px 116px ;
 }
 .transition-contact {
     display: flex;
