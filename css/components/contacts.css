@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+main {
+    background-color: #fcf9eb;
+    max-width: 1440px;
+    width: 100%;
+    font-family: Rubik;
+}
+
+.container-contacts {
+    padding: 24px 116px 0px 116px ;
+}
+
+.transition-contact {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding-bottom: 24px;
+}
+.main-contact{
+font-family: Rubik;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+color: #414141;
+text-decoration: none;
+}
+.about-contact {
+font-family: Rubik;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+color: #8F8F8F;
+text-decoration: none;
+}
+.our_stores-shop {
+    padding-bottom: 32px;
+}
+.contact-about-general {
+    padding-bottom: 120px;
+}
+.h2-text {
+    color: #414141;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 150%;
+    padding-bottom: 40px;
+}
+.Accounting-warehouse {
+    display: flex;
+    gap: 80px;
+}
+.number-contact {
+    display: flex;
+    gap: 8px;
+}
+.number-contact-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.img-home {
+    width: 30px;
+    height: 30px;
+}
+.text-p {
+    color: #414141;
+font-weight: 400;
+font-size: 24px;
+line-height: 150%;
+
+}
+.nomer-p {
+color: #414141;
+font-weight: 700;
+font-size: 24px;
+line-height: 150%;
+text-decoration: underline;
+text-decoration-style: solid;
+}
+.home-contact-img-text {
+    display: flex;
+    gap: 8px;
+}
+.home-contact-img-text-p {
+     display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.stores-shop-general ul{
+    display: flex;
+    gap: 80px;
+    list-style: none;
+}
+.text-h2-shop {
+font-weight: 700;
+font-size: 36px;
+line-height: 150%;
+color: #414141;
+padding-bottom: 40px;
+}
+.text-img-shop {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.home-shop {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.phone-shop {
+     display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.p-shop {
+    color: #414141;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+}
+.nomer-shop {
+    color: #414141;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+text-decoration: underline;
+text-decoration-style: solid;
+}
+.img-map {
+    padding-bottom: 152px;
+}
+.footer {
+    background-image: url('../../assets/icons/bg.svg');
+    display: block;
+    max-width: 1440px;
+    width: 100%;
+    height: 126px;
+    background-color: #F9F4E2;
+}
+.footer-container {
+    padding: 24px 115.5px 24px 115.5px;
+}
+.group-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ul-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    list-style: none;
+}
+.a-decaration {
+    text-decoration: none;
+    color: #414141;
+}
+.ul-container li {
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+cursor: pointer;
+}
+
+.icons-messenger ul {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+.social-contact {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.contacts-phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.contacts-phone img {
+    width: 24px;
+    height: 24px;
+}
