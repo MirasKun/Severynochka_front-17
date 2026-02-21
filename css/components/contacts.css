@@ -172,10 +172,12 @@ cursor: pointer;
 }
 .ul-container li:hover {
     color: #FF6633;
+    cursor: pointer;
 }
 
 .a-decaration:hover {
     color: #FF6633;
+    cursor: pointer;
 }
 .icons-messenger ul {
     display: flex;
