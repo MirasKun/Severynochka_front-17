@@ -168,8 +168,15 @@ font-weight: 400;
 font-size: 12px;
 line-height: 150%;
 cursor: pointer;
+
+}
+.ul-container li:hover {
+    color: #FF6633;
 }
 
+.a-decaration:hover {
+    color: #FF6633;
+}
 .icons-messenger ul {
     display: flex;
     gap: 16px;
@@ -188,4 +195,22 @@ cursor: pointer;
 .contacts-phone img {
     width: 24px;
     height: 24px;
+}
+.dizain-name {
+    padding-left: 1065px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.phone-p {
+    color: #414141;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+}
+.dizain-p {
+    color: #414141;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
 }
