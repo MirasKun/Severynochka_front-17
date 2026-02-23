@@ -8,6 +8,10 @@
     color: #414141;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     background-color: #fffcf1;
 }
