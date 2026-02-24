@@ -126,6 +126,7 @@ header {
 .banner {
     background-image: url(/assets/images/bg-dostavka.svg);
     background-color: #fff;
+    margin-bottom: 80px;
 }
 
 .wrapper-banner {
