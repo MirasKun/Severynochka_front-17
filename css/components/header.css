@@ -2,10 +2,13 @@
 header {
     display: flex;
     align-items: center;
+    max-width: 1440px;
     width: 100%;
     height: 72px;
+    padding-left: 116px;
+    padding-right: 116px;
     background-color: #fff;
-    box-shadow: 2px 4px 8px 0px #0000001A;
+    box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
 .wrapper-header {
@@ -109,6 +112,13 @@ header {
     line-height: 150%;
 }
 
+.p-favotite {
+    color: #FF6633;
+}
+
+.img-favorite {
+    padding-top: 4px;
+}
 
 
 

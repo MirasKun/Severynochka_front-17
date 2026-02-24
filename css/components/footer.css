@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+
+.footer {
+    background-image: url('../../assets/icons/bg.svg');
+    display: block;
+    max-width: 1440px;
+    width: 100%;
+    height: 126px;
+    background-color: #F9F4E2;
+}
+.footer-container {
+    padding: 24px 115.5px 24px 115.5px;
+}
+.group-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ul-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    list-style: none;
+}
+.a-decaration {
+    text-decoration: none;
+    color: #414141;
+}
+.ul-container li  {
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+cursor: pointer;
+
+}
+.ul-container li:hover {
+    color: #FF6633;
+    cursor: pointer;
+}
+
+.a-decaration:hover {
+    color: #FF6633;
+    cursor: pointer;
+}
+.icons-messenger ul {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+.social-contact {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.contacts-phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.contacts-phone img {
+    width: 24px;
+    height: 24px;
+}
+.dizain-name {
+    padding-left: 1065px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.phone-p {
+    color: #414141;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+}
+.dizain-p {
+    color: #414141;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+}

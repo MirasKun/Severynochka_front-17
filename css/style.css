@@ -8,8 +8,12 @@
     color: #414141;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
-    background-color: #fffcf1;
+     background-color: #fcf9eb;
 }
 
 .container {

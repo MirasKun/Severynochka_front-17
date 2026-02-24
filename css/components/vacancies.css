@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body {
+     background-color: #fcf9eb;
+}
+
+main {
+    max-width: 1440px;
+    width: 100%;
+    font-family: Rubik;
+}
+.container-contacts {
+    padding: 24px 116px 80px 116px ;
+}
+.transition-contact {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding-bottom: 24px;
+}
+.main-contact{
+font-family: Rubik;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+color: #414141;
+text-decoration: none;
+}
+.about-contact {
+font-family: Rubik;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+color: #8F8F8F;
+text-decoration: none;
+}
+.contact-about-general {
+    padding-bottom: 60px;
+}
+.h2-text {
+    color: #414141;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 150%;
+}
+.Requirements-vacancies {
+    width: 376px;
+    height: 550px;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+.Job_title-vacancies  {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 40px;
+}
+.Requirements-vacancies {
+    padding: 32px;
+}
+.Requirements-vacancies ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+}
+.h3-text {
+    color: #414141;
+font-weight: 700;
+font-size: 24px;
+line-height: 150%;
+}
+.Requirements-cart {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #414141;
+}
+.requirements-text {
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+}
+.requirements-p {
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+}
+.phone-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.phone-decoration {
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+text-decoration: underline;
+text-decoration-style: solid;
+}

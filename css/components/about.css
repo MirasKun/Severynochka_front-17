@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
+
+body {
+      background-color: #F9F4E2;
+}
 main {
-    background-color: #F9F4E2;
+  
     max-width: 1440px;
     width: 100%;
     height: 869px;
@@ -14,7 +12,6 @@ main {
 
 .block-company{
     padding: 24px 116px 4px 116px;
-
 }
 .transition {
     display: flex;
@@ -27,7 +24,6 @@ font-weight: 400;
 font-size: 12px;
 line-height: 150%;
 color: #414141;
-text-decoration: none;
 }
 .about-company {
 font-family: Rubik;
@@ -35,5 +31,162 @@ font-weight: 400;
 font-size: 12px;
 line-height: 150%;
 color: #8F8F8F;
-text-decoration: none;
 }
+
+/* ------  Company section  ------ */
+
+.company-section {
+    display: flex;
+    max-width: 1345px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper-company{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.company-info {
+    width: 419px;
+    height: 256px;
+    z-index: 1;
+}
+
+.company-title {
+    font-size: 64px;
+    width: 1208px;
+    height: 96px;
+}
+
+.company-subtitle {
+    width: 669px;
+    font-weight: 700;
+    line-height: 150%;
+    height: 144px;
+    font-size: 24px;
+    color: #FF6633;
+}
+
+.company-images {
+    position: relative;
+    width: 670px;
+    height: 400px;
+}
+
+.company-bg {
+    position: absolute;
+    bottom: -5px;
+    left: 20px;
+    width: 720px;
+    height: 370px;
+}
+
+.company-photo {
+    position: absolute;
+    bottom: -10px;
+    right: -30px;
+    width: 600px;
+    height: 274px;
+}
+
+.company-bg-images {
+    position: absolute;
+    bottom: 30px;
+    top: 15px;
+    left: -560px;
+    width: 1345px;
+}
+
+/* ------  pros section  ------ */
+
+.pros-company {
+    padding: 120px 0;
+}
+
+.wrapper-pros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.pros-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.check-icons {
+    width: 28px;
+    height: 28px;
+}
+
+.pros-content {
+    max-width: 320px;
+}
+
+.pros-label {
+    font-size: 16px;
+    color: #414141;
+    line-height: 1.4;
+}
+
+.company-experience-pros-2 {
+    width: 315px;
+}
+
+.company-experience-pros-3 {
+    width: 405px;
+}
+
+.pros-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px;
+    line-height: 150%;
+    color: #333;
+}
+
+/* ------  banner section  ------ */
+
+.banner-smail-section {
+    padding: 40px 0;
+    background-color: #F9F4E2;
+}
+
+.banner-wrapper {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.banner-smail {
+    width: 127px;
+    height: 103px;
+    margin-right: 40px;
+}
+
+.banner-inner {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    background-color: #E5FFDE;
+    border-radius: 16px;
+    padding: 32px 48px;
+}
+
+.banner-text {
+    font-size: 20px;
+    font-weight: 500;
+    color: #4CAF50;
+}
+
+.triangle-banner {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-bottom: 40px solid transparent;
+    border-right: 40px solid #E5FFDE;
+}
+
