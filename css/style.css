@@ -21,3 +21,25 @@ h2 {
     font-size: 36px;
     font-weight: 700;
 }
+.transition-contact {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding-bottom: 24px;
+}
+.main-contact{
+font-family: Rubik;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+color: #414141;
+text-decoration: none;
+}
+.about-contact {
+font-family: Rubik;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+color: #8F8F8F;
+text-decoration: none;
+}

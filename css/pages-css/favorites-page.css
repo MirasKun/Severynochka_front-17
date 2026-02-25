@@ -4,6 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0 auto;
+.container-contacts {
+   padding: 24px 116px 24px 116px;
 }
