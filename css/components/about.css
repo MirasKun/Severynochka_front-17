@@ -8,6 +8,7 @@ main {
     max-width: 1440px;
     width: 100%;
     height: 869px;
+    margin-bottom: 180px;
 }
 
 .block-company{
@@ -189,4 +190,5 @@ color: #8F8F8F;
     border-bottom: 40px solid transparent;
     border-right: 40px solid #E5FFDE;
 }
+
 
