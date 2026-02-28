@@ -7,12 +7,13 @@ box-sizing: border-box;
 
 body {
      background-color: #fcf9eb;
+     font-family: Rubik;
 }
 
 main {
     max-width: 1440px;
     width: 100%;
-    font-family: Rubik;
+    
 }
 
 .container-contacts {
@@ -86,6 +87,11 @@ line-height: 150%;
 text-decoration: underline;
 text-decoration-style: solid;
 }
+
+.our-stores-container {
+    padding-left: 116px;
+    padding-right: 116px;
+}
 .home-contact-img-text {
     display: flex;
     gap: 8px;
@@ -95,7 +101,6 @@ text-decoration-style: solid;
     flex-direction: column;
     gap: 16px;
 }
-
 .stores-shop-general ul{
     display: flex;
     gap: 80px;
@@ -218,4 +223,8 @@ line-height: 150%;
 font-weight: 400;
 font-size: 12px;
 line-height: 150%;
+}
+
+.map-container {
+    margin-bottom: 152px;
 }
