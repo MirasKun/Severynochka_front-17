@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/pages-css/main-page.css">
     <link rel="stylesheet" href="/css/components/footer.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/components/card.css">
     <title>Severynochka</title>
 </head>
 <body>
@@ -55,6 +56,58 @@
     </section>
 
     <main>
+
+        <section class="section-stock">
+            <div class="container">
+                <div class="wrapper-stock">
+                    <div class="title-stock">
+                        <h2>Акции</h2>
+
+                        <div class="go-to-all-stock">
+                            <a href="/">Все акции</a>
+                            <img src="/assets/icons/transition.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="card-box">
+                        <!-- Структура карточки -->
+                        <div class="card">
+                            <div class="img-box-card">
+                                <img src="/assets/card-images/pancake.png" alt="">
+                                <div class="discount">
+                                    <p>-50%</p>
+                                </div>
+                                <div class="like-heart">
+                                    <img src="/assets/icons/like-heart-in_card.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="card-inf">
+                                <div class="card-price">
+                                    <div class="price-left">
+                                        <p class="_price">44,50 <span>₽</span></p>
+                                        <p class="with-card">С картой</p>
+                                    </div>
+                                    <div class="price-right">
+                                        <p class="regular-price">50,50 <span>₽</span></p>
+                                        <p class="regular">Обычная</p>
+                                    </div>
+                                </div>
+                                <div class="inf-abaut-card">
+                                    <p>Г/Ц Блинчики с мясом вес, Россия</p>
+                                </div>
+                                <div class="card-rating">
+                                    <img src="https://zpatky.files.wordpress.com/2019/08/hvezdy-2.jpg" alt="">
+                                </div>
+                                <button class="add-to-cart">В корзину</button>
+                            </div>
+                        </div>
+                        <!-- ---------- -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
         
         <section class="section-offers">
             <div class="container">
@@ -92,7 +145,7 @@
                     <h2>Наши магазины</h2>
 
                     <div class="map-container">
-                        <div style="position:relative;overflow:hidden; bottom: 100px;">
+                        <div style="overflow:hidden; bottom: 100px;">
                             <a href="https://yandex.com/maps/19/syktyvkar/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Сыктывкар</a>
                             <a href="https://yandex.com/maps/geo/respublika_komi/53000064/?ll=50.847724%2C61.663165&utm_medium=mapframe&utm_source=maps&z=14.51" style="color:#eee;font-size:12px;position:absolute;top:14px;">Республика Коми — Яндекс Карты</a>
                             <iframe src="https://yandex.com/map-widget/v1/?ll=50.847724%2C61.663165&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA2NBIr0KDQvtGB0YHQuNGPLCDQoNC10YHQv9GD0LHQu9C40LrQsCDQmtC-0LzQuCIKDZ8oW0IVPUCAQg%2C%2C&z=14.51" width="100%" height="354" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
@@ -108,12 +161,12 @@
         <div class="footer-container">
             <div class="group-footer">
                 <ul class="ul-container">
-                   <li><img src="../assets/icons/logo-footer.svg" alt=""></li>
-                   <li><a class="a-decaration" href="./pages/about.html">О компании</a></li>
-                   <li><a class="a-decaration" href="./pages/contacts.html">Контакты</a></li>
-                   <li><a class="a-decaration" href="./pages/vacancies.html">Вакансии</a></li>
-                   <li>Статьи</li>
-                   <li>Политика обработки персональных данных</li>
+                    <li><img src="../assets/icons/logo-footer.svg" alt=""></li>
+                    <li><a class="a-decaration" href="./pages/about.html">О компании</a></li>
+                    <li><a class="a-decaration" href="./pages/contacts.html">Контакты</a></li>
+                    <li><a class="a-decaration" href="./pages/vacancies.html">Вакансии</a></li>
+                    <li>Статьи</li>
+                    <li>Политика обработки персональных данных</li>
                 </ul>
                 <div class="social-contact">
                     <div class="icons-messenger">

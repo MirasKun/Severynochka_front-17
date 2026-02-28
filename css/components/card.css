@@ -1,0 +1,98 @@
+.card {
+    width: 272px;
+    height: 349px;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 1px 2px 4px 0px #0000001A;
+    transition: 0.2s;
+}
+.card:hover {
+    box-shadow: 4px 8px 16px 0px #FF663333;
+}
+.card:hover .add-to-cart {
+    color: #fff;
+    background-color: #FF6633;
+    border: 2px solid #FF6633;
+}
+
+.img-box-card {
+    width: 272px;
+    height: 160px;
+    position: relative;
+}
+.discount {
+    width: 56px;
+    height: 32px;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF6633;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+.discount > p {
+    color: #fff;
+}
+.like-heart {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.card-inf {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.card-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-left > ._price {
+    font-size: 18px;
+    font-weight: 700;
+}
+.price-left > .with-card {
+    font-size: 12px;
+    font-weight: 400;
+    color: #BFBFBF;
+}
+.price-right > .regular-price {
+    color: #606060;
+}
+.price-right > .regular {
+    font-size: 12px;
+    font-weight: 400;
+    color: #BFBFBF;
+}
+
+.card-rating {
+    width: 256px;
+    height: 16px;
+}
+.card-rating > img {
+    width: 96px;
+    height: 16px;
+}
+
+.add-to-cart {
+    width: 256px;
+    height: 40px;
+    color: #70C05B;
+    background-color: #fff;
+    border: 1px solid #70C05B;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+
+
