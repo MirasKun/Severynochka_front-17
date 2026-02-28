@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: Rubik;
     color: #414141;
+    line-height: 150%;
 }
 
 a {
@@ -13,7 +14,7 @@ a {
 }
 
 body {
-     background-color: #fcf9eb;
+    background-color: #fcf9eb;
 }
 
 .container {
@@ -25,3 +26,4 @@ h2 {
     font-size: 36px;
     font-weight: 700;
 }
+
