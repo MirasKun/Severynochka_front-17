@@ -94,13 +94,13 @@ header {
     bottom: 43px;
 
     width: 11px;
+    text-align: center;
     height: 11px;
-    padding: 2px 4px;
     background-color: #FF6633;
     border-radius: 4px;
 
     color: #fff;
-    font-size: 7px;
+    font-size: 9px;
 }
 .right-nav .busket-wrap .busket {
     height: 24px;
