@@ -21,6 +21,9 @@ body {
   max-width: 1208px;
   margin: 0 auto;
 }
+li {
+    list-style: none;
+}
 
 h2 {
   font-size: 36px;

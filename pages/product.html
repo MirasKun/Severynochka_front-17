@@ -1,16 +1,16 @@
-<!doctype html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/components/header.css" />
-    <link rel="stylesheet" href="../css/components/footer.css" />
-    <link rel="stylesheet" href="../css/components/card.css" />
-    <link rel="stylesheet" href="../css/pages-css/product-page.css" />
-    <title>Товар — Северяночка</title>
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/components/header.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/pages-css/product-page.css">
+
+    <title>Товар</title>
+</head>
+<body>
     <header>
       <div class="container">
         <div class="wrapper-header">
@@ -63,27 +63,125 @@
     </header>
 
     <main>
-      <section class="section-product">
-        <div class="container">
-          <nav class="product-breadcrumb" aria-label="Хлебные крошки">
-            <a class="product-breadcrumb__link" href="../index.html">Главная</a>
-            <img src="../assets/icons/transition.svg" alt="" />
-            <span
-              class="product-breadcrumb__current"
-              id="product-name-breadcrumb"
-              >Товар</span
-            >
-          </nav>
+        <section class="click-info"> 
+            <div class="container">
+                <div class="wrapper-info-click">
+                    <div class="text-info-title">
+                        <h1 class="title-information">Масло ПРОСТОКВАШИНО сливочное в/с 82% фольга без змж, Россия, 180 г</h1>
+                    </div>
+                    <div class="share-information">
+                        <p class="art-info">арт. 371431</p>
+                        <div class="icons-grade">
+                            <img class="grade-change" src="https://zpatky.files.wordpress.com/2019/08/hvezdy-2.jpg" alt="Рейтинг: 1 из 5">
+                            <a href="#reviews" class="review-info">3 отзыва</a>
+                        </div>
+                        <button class="share-info-click-1" type="button">
+                            <img class="share-icons-prewe" src="../assets/icons/share-2.svg" alt="">
+                            <p class="share-button-p">Поделиться</p>
+                        </button>
+                        <button class="share-info-click-2" type="button">
+                            <img class="heart-icons-info" src="../assets/icons/heart.svg" alt="">
+                            <p class="heart-button-p">В избранное</p>
+                        </button>
+                    </div>
+                </div>
 
-          <div id="product-loading" class="product-state">
-            <p>Загрузка товара…</p>
-          </div>
-          <div id="product-error" class="product-state" style="display: none">
-            <p>Товар не найден.</p>
-            <a class="btn-go-back" href="../index.html"
-              >← Вернуться на главную</a
-            >
-          </div>
+                <div class="product-layout">
+                
+                    <div class="product-gallery">
+                        <ul class="gallery-thumbs">
+                            <li><img class="mini-sour-milk" src="../assets/images/cow-prostokvashino.png" alt="Фото 1"></li>
+                            <li><img class="mini-sour-milk" src="../assets/images/cow-prostokvashino.png" alt="Фото 2"></li>
+                            <li><img class="mini-sour-milk" src="../assets/images/cow-prostokvashino.png" alt="Фото 3"></li>
+                            <li><img class="mini-sour-milk" src="../assets/images/cow-prostokvashino.png" alt="Фото 4"></li>
+                            <li><img class="mini-sour-milk" src="../assets/images/cow-prostokvashino.png" alt="Фото 5"></li>
+                        </ul>
+                        <div class="gallery-main">
+                            <img class="product-image-sour-milk" src="../assets/images/cow-prostokvashino.png" alt="Масло Простоквашино 82%">
+                        </div>
+                    </div>
+                
+                    <div class="product-price">
+                        <div class="product-widget-pricing">
+                            <div class="price-old">
+                                <p class="price-old-value">192,69 ₽</p>
+                                <p class="price-old-label">Обычная цена</p>
+                            </div>
+                            <div class="price-card">
+                                <div class="price-card-value">108,99 ₽</div>
+                                <div class="price-card-label">
+                                    <p class="price-card-Severyanochka">С картой Северяночки</p>
+                                    <img class="price-i" src="../assets/icons/info.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-price-info">
+                            <button class="add-button" type="button">
+                                <img class="shoping-button" src="../assets/icons/shopping-cart-white.svg" alt="shopping-cart">
+                                <p class="shoping-button-p-corzina">В корзину</p>
+                            </button>
+                            <div class="bonus-msg">
+                                <img src="../assets/icons/smile.svg" alt="">
+                                <p class="bonuses-p-price">Вы получаете <b>10 бонусов</b></p>
+                            </div>
+                            <button class="notify-btn" type="button">
+                                <img class="bell-offf-price" src="../assets/icons/bell-off.svg" alt="">
+                                <p class="decline-bell-off">Уведомить о снижении цены</p>
+                            </button>
+                        </div>
+                    
+                        <div class="product-price-details">
+                            <div class="detail-row">
+                                <p class="detail-row-name">Бренд</p>
+                                <p class="detail-row-value">ПРОСТОКВАШИНО</p>
+                            </div>
+                            <div class="detail-row">
+                                <p class="detail-row-name">Страна производителя</p>
+                                <p class="detail-row-value">Россия</p>
+                            </div>
+                            <div class="detail-row">
+                                <p class="detail-row-name">Упаковка</p>
+                                <p class="detail-row-value">180 г</p>
+                            </div>
+                        </div>
+                    </div> <!-- /product-price -->
+
+                    <div class="product-similar">
+                        <h2 class="similar-title">Похожие</h2>
+                        <ul class="similar-list">            
+                            <li class="similar-item">
+                                <a href="#" class="similar-link">
+                                    <img class="similar-img" src="../assets/images/butter-cow.png" alt="Масло Экомилк 82.5%">
+                                    <strong class="similar-price">157,50 ₽</strong>
+                                </a>
+                            </li>
+                            <li class="similar-item">
+                                <a href="#" class="similar-link">
+                                    <img class="similar-img" src="../assets/images/thousand lakes.png" alt="Масло Тысяча Озёр 82.5%">
+                                    <strong class="similar-price">331,50 ₽</strong>
+                                </a>
+                            </li>
+                            <li class="similar-item">
+                                <a href="#" class="similar-link">
+                                    <img class="similar-img" src="../assets/images/lanthal-butter.png" alt="Масло Аланталь 79%">
+                                    <strong class="similar-price">154,50 ₽</strong>
+                                </a>
+                            </li>
+                            <li class="similar-item">
+                                <a href="#" class="similar-link">
+                                    <img class="similar-img" src="../assets/images/butter-cow.png" alt="Масло Экомилк 82.5%">
+                                    <strong class="similar-price">157,50 ₽</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!-- /product-similar -->
+
+                </div> <!-- /product-layout -->
+
+            </div> <!-- /container -->
+        </section>
+    </main>
 
           <div class="product-detail" id="product-detail" style="display: none">
             <div class="product-detail__gallery">
@@ -140,50 +238,31 @@
     </main>
 
     <footer class="footer">
-      <div class="footer-container">
-        <div class="group-footer">
-          <ul class="ul-container">
-            <li>
-              <a href="../index.html"
-                ><img src="../assets/icons/logo-footer.svg" alt="Северяночка"
-              /></a>
-            </li>
-            <li><a class="a-decaration" href="./about.html">О компании</a></li>
-            <li><a class="a-decaration" href="./contacts.html">Контакты</a></li>
-            <li>
-              <a class="a-decaration" href="./vacancies.html">Вакансии</a>
-            </li>
-            <li>Статьи</li>
-            <li>Политика обработки персональных данных</li>
-          </ul>
-          <div class="social-contact">
-            <div class="icons-messenger">
-              <ul>
-                <li>
-                  <a href="#" aria-label="Instagram"
-                    ><img src="../assets/icons/instagram.svg" alt="Instagram"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#" aria-label="ВКонтакте"
-                    ><img src="../assets/icons/vkontakte.svg" alt="ВКонтакте"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#" aria-label="Facebook"
-                    ><img src="../assets/icons/facebook.svg" alt="Facebook"
-                  /></a>
-                </li>
-                <li>
-                  <a href="#" aria-label="Одноклассники"
-                    ><img src="../assets/icons/ok.svg" alt="Одноклассники"
-                  /></a>
-                </li>
-              </ul>
-            </div>
-            <div class="contacts-phone">
-              <img src="../assets/icons/phone.svg" alt="" />
-              <a class="phone-p" href="tel:88007773333">8 800 777 33 33</a>
+        <div class="footer-container">
+            <div class="group-footer">
+                <ul class="ul-container">
+                    <li><a href="../index.html"><img src="../assets/icons/logo-footer.svg" alt=""></a></li>
+                    <li><a class="a-decaration" href="./pages/about.html">О компании</a></li>
+                    <li><a class="a-decaration" href="./pages/contacts.html">Контакты</a></li>
+                    <li><a class="a-decaration" href="./pages/vacancies.html">Вакансии</a></li>
+                    <li>Статьи</li>
+                    <li>Политика обработки персональных данных</li>
+                </ul>
+                <div class="social-contact">
+                    <div class="icons-messenger">
+                        <ul>
+                            <li><img src="../assets/icons/instagram.svg" alt="instagram"></li>
+                            <li><img src="../assets/icons/vkontakte.svg" alt="vkontakte"></li>
+                            <li><img src="../assets/icons/facebook.svg" alt="facebook"></li>
+                            <li><img src="../assets/icons/ok.svg" alt="ok"></li>
+                        </ul>
+                    </div>
+                    <div class="contacts-phone">
+                        <img src="../assets/icons/phone.svg" alt="">
+                        <p class="phone-p">8 800 777 33 33</p>
+                    </div>
+                </div>
+                
             </div>
           </div>
         </div>

@@ -2,170 +2,369 @@
   padding: 40px 0 100px;
 }
 
-.product-breadcrumb {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 32px;
-  font-size: 13px;
+/* --------- click-info  --------- */
+
+.click-info {
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
 
-.product-breadcrumb__link {
-  color: #606060;
-  transition: color 0.15s ease;
+.wrapper-info-click {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 0 16px ;
 }
 
-.product-breadcrumb__link:hover {
-  color: #ff6633;
+.title-information {
+    font-size: 24px;
+    font-weight: 700;
 }
 
-.product-breadcrumb__current {
-  color: #414141;
-  font-weight: 500;
+.share-information {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 575px;
+    height: 36px;
+    gap: 24px;
 }
 
-.product-state {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  padding: 80px 0;
-  color: #8f8f8f;
-  font-size: 16px;
+.art-info {
+    font-size: 14px;
+    color: #414141;
 }
 
-.btn-go-back {
-  color: #70c05b;
-  font-size: 14px;
-  transition: color 0.15s;
+.icons-grade {
+    width: 164px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 
-.btn-go-back:hover {
-  color: #5aaa45;
+.grade-change {
+    width: 96px;
+    height: 16px;
+    background-color: #FBF8EC;
 }
 
-.product-detail {
-  display: flex;
-  gap: 48px;
-  margin-bottom: 80px;
-  align-items: flex-start;
+.review-info {
+    font-size: 14px;
+    color: #414141;
+    text-decoration: underline;
 }
 
-.product-detail__gallery {
-  width: 480px;
-  height: 400px;
-  flex-shrink: 0;
-  background: #f5f5f5;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+.share-button-p {
+    color: #606060;
+    font-size: 12px;
 }
 
-.product-detail__gallery img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  padding: 24px;
+.heart-button-p {
+    color: #606060;
+    font-size: 12px;
+
 }
 
-.product-detail__info {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.share-info-click-1 {
+    width: 132px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #FBF8EC;
+    border: none;
 }
 
-.product-detail__name {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.3;
+.share-info-click-2 {
+    width: 132px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #FBF8EC;
+    border: none;
 }
 
-.product-detail__rating {
-  display: flex;
-  gap: 3px;
+/* ---------  product-layout  --------- */
+
+.product-layout {
+    height: 496px;
+    display: flex;
 }
 
-.product-detail__pricing {
-  display: flex;
-  gap: 24px;
-  align-items: flex-end;
+.product-gallery {
+    display: flex;
+    width: 584px;
+    gap: 16px;
 }
 
-.price-big {
-  font-size: 32px;
-  font-weight: 700;
-  color: #414141;
+.gallery-thumbs li {
+    width: 64px;
+    height: 86px;
 }
 
-.price-with-card {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+.gallery-thumbs {
+    width: 64px;
+    height: 496px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.price-regular {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+.mini-sour-milk {
+    width: 64px;
+    height: 86px;
+    border-radius: 4px;
+}
+
+.gallery-main {
+    width: 504px;
+    height: 496px;
+}
+
+.product-image-sour-milk {
+    width: 504px;
+    height: 496px;
+}
+
+/* ---------  product-price  --------- */
+
+.product-price {
+    padding: 0 40px 0 ;
+}
+
+.product-widget-pricing {
+    width: 376px;
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .price-old {
-  font-size: 18px;
-  color: #8f8f8f;
-  text-decoration: line-through;
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    justify-content: end;
+    align-items: start;
+    gap: 5px;
 }
 
-.price-label {
-  font-size: 12px;
-  color: #bfbfbf;
+.price-old-value {
+    font-size: 24px;
+    width: 98px;
+    height: 36px;
+    font-weight: 400;
 }
 
-.product-detail__actions {
-  display: flex;
-  gap: 12px;
-  align-items: center;
+.price-old-label {
+    font-size: 12px;
+    width: 82px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #BFBFBF;
 }
 
-.btn-add-to-cart-big {
-  height: 52px;
-  padding: 0 40px;
-  background-color: #ff6633;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+.price-card-value {
+    font-size: 36px;
+    font-weight: 700;
+    width: 165px;
+    height: 44px;
 }
 
-.btn-add-to-cart-big:hover {
-  background-color: #e55520;
+.price-card {
+    width: 165px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 7px;
 }
 
-.btn-like-big {
-  width: 52px;
-  height: 52px;
-  border: 1px solid #ff6633;
-  border-radius: 4px;
-  background: #fff;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.15s ease;
+.price-card-label {
+    width: 163px;
+    height: 24px;
+    display: flex;
+    gap: 8px;
 }
 
-.btn-like-big:hover,
-.btn-like-big.is-favorite {
-  background: #fff3ee;
+.price-card-Severyanochka {
+    font-size: 12px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #BFBFBF;
 }
 
-.product-related__title {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 24px;
+
+/* ---------  product-price-info  --------- */
+
+.product-price-info {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding-top: 16px;
+}
+
+.add-button {
+    width: 376px;
+    height: 60px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 80px;
+    background-color: #FF6633;
+    border: none;
+    border-radius: 4px;
+    padding: 0 20px ;
+}
+
+.shoping-button-p-corzina {
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.bonus-msg {
+    display: flex;
+    gap: 4px;
+    width: 212px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bonuses-p-price {
+    color: #70C05B;
+    font-size: 12px;
+    width: 164px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.bonuses-p-price b {
+    color: #70C05B;
+}
+
+.notify-btn {
+    display: flex;
+    gap: 8px;
+    height: 32px;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #FBF8EC;
+    padding: 0 8px;
+}
+
+.decline-bell-off {
+    width: 200px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #606060;
+}
+
+
+
+.product-price-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: start;
+    height: 26px;
+    align-items: center;
+    gap: 20px;
+    padding: 0 8px;
+    
+}
+
+.detail-row:nth-child(1), 
+.detail-row:nth-child(3) {
+    background-color: #F3F2F1;
+}
+
+.detail-row-name {
+    font-size: 12px;
+    width: 161px;
+    height: 18px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #414141;
+
+}
+
+.detail-row-value {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #414141;
+}
+
+/* ---------  product-similar  --------- */
+
+.product-similar {
+    height: 496px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.similar-title {
+    font-size: 16px;
+    color: #606060;
+    height: 24px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.similar-list {
+    height: 496px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.similar-item {
+    height: 104px;
+    background-color: white;
+    display: flex;
+
+}
+
+.similar-link {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.similar-price {
+    width: 148px;
+    height: 27px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0 10px;
 }

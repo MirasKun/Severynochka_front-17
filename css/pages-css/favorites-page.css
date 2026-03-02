@@ -18,6 +18,9 @@
 .breadcrumb__current {
   color: #414141;
   font-weight: 500;
+.container-favorites {
+    padding-right: 116px;
+    padding-left: 116px;
 }
 
 .favorites-header {
