@@ -1,28 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Rubik;
-    color: #414141;
-    line-height: 150%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Rubik;
+  color: #414141;
+  line-height: 150%;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-    background-color: #fcf9eb;
+  background-color: #fcf9eb;
 }
 
 .container {
-    max-width: 1208px;
-    margin: 0 auto;
+  max-width: 1208px;
+  margin: 0 auto;
 }
 
 h2 {
-    font-size: 36px;
-    font-weight: 700;
+  font-size: 36px;
+  font-weight: 700;
 }

@@ -1,178 +1,222 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/components/contacts.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/components/header.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/pages-css/contacts-page.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/components/header.css" />
     <title>Контакты</title>
-</head>
-<body>
-<header>
-        <div class="container">
-            <div class="wrapper-header">
-                    <div class="logo">
-                        <img src="../assets/icons/logo.svg" alt="logo">
-                    </div>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="wrapper-header">
+          <div class="logo">
+            <img src="../assets/icons/logo.svg" alt="logo" />
+          </div>
 
-                <div class="input-box">
-                    <input id="search_input" type="text" placeholder="Найти товар">
-                    <div class="search-icon-wrap">
-                        <img class="search_icon" src="../assets/icons/search.svg" alt="Лупа">
-                    </div>
-                </div>
-
-                <nav class="right-nav">
-                    <div class="favorite-wrap">
-                        <div class="favorite">
-                            <a href="../pages/favorites.html"><img src="../assets/icons/heart.svg" alt="Избранное"></a>
-                        </div>
-                        <p>Избранное</p>
-                    </div>
-                    <div class="busket-wrap">
-                        <div class="count-view" id="count-view" hidden>1</div>
-                        <div class="busket">
-                            <img src="../assets/icons/shopping-cart.svg" alt="">
-                        </div>
-                        <p>Корзина</p>
-                    </div>
-                </nav>
+          <div class="input-box">
+            <input id="search_input" type="text" placeholder="Найти товар" />
+            <div class="search-icon-wrap">
+              <img
+                class="search_icon"
+                src="../assets/icons/search.svg"
+                alt="Лупа"
+              />
             </div>
+          </div>
+
+          <nav class="right-nav">
+            <div class="favorite-wrap">
+              <div class="favorite">
+                <a href="../pages/favorites.html"
+                  ><img src="../assets/icons/heart.svg" alt="Избранное"
+                /></a>
+              </div>
+              <p>Избранное</p>
+            </div>
+            <div class="busket-wrap">
+              <div class="count-view" id="count-view" hidden>1</div>
+              <div class="busket">
+                <img src="../assets/icons/shopping-cart.svg" alt="" />
+              </div>
+              <p>Корзина</p>
+            </div>
+          </nav>
         </div>
+      </div>
     </header>
     <main>
-       <section class="transition_section">
-            <div class="container-contacts">
-                <div class="transition-contact">
-                    <a class="main-contact" href="../index.html">Главная</a>
-                    <img src="../assets/icons/transition.svg" alt="icon-">
-                    <a class="about-contact" href="./about.html">Контакты</a>
+      <section class="transition_section">
+        <div class="container-contacts">
+          <div class="transition-contact">
+            <a class="main-contact" href="../index.html">Главная</a>
+            <img src="../assets/icons/transition.svg" alt="icon-" />
+            <a class="about-contact" href="./about.html">Контакты</a>
+          </div>
+          <div class="contact-about-general">
+            <h2 class="h2-text">Контакты</h2>
+            <div class="general-contact">
+              <div class="Accounting-warehouse">
+                <div class="number-contact">
+                  <img class="img-home" src="../assets/icons/home.svg" alt="" />
+                  <div class="number-contact-text">
+                    <p class="text-p">Бухгалтерия, склад</p>
+                    <p class="nomer-p">+7 821 409 26 19</p>
+                  </div>
                 </div>
-                <div class="contact-about-general">
-                    <h2 class="h2-text">Контакты</h2>
-                    <div class="general-contact">
-                        <div class="Accounting-warehouse">
-                            <div class="number-contact">
-                                <img class="img-home" src="../assets/icons/home.svg" alt="">
-                                <div class="number-contact-text">
-                                <p class="text-p">Бухгалтерия, склад</p>
-                                <p class="nomer-p">+7 821 409 26 19</p>
-                                </div>
-                            </div>
-                            <div class="home-contact-img-text">
-                                <img class="img-home" src= "../assets/icons/percent.svg" alt="">
-                                <div class="home-contact-img-text-p">
-                                <p class="text-p">Вопросы по системе лояльности</p>
-                                <p class="nomer-p">+7 908 716 33 97</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="home-contact-img-text">
+                  <img
+                    class="img-home"
+                    src="../assets/icons/percent.svg"
+                    alt=""
+                  />
+                  <div class="home-contact-img-text-p">
+                    <p class="text-p">Вопросы по системе лояльности</p>
+                    <p class="nomer-p">+7 908 716 33 97</p>
+                  </div>
                 </div>
-                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="our_stores_section">
-            <div class="our-stores-container">
-                <div class="our_stores-shop">
-                    <h2 class="text-h2-shop">Наши магазины</h2>
-                    <div class="stores-shop-general">
-                        <ul>
-                            <li>
-                                <div class="text-img-shop">
-                                    <img src="../assets/icons/market.svg" alt="">
-                                    <div class="home-shop">
-                                    <img src="../assets/icons/home.svg" alt="">
-                                    <p class="p-shop">ул. Дорожная 10</p>
-                                    </div>
-                                    <div class="phone-shop">
-                                    <img src="../assets/icons/phone.svg" alt="">
-                                    <p class="nomer-shop">+7 904 271 35 90</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="text-img-shop">
-                                     <img src="../assets/icons/parus.svg" alt="">
-                                    <div class="home-shop">
-                                    <img src="../assets/icons/home.svg" alt="">
-                                    <p class="p-shop">ул. Советская 87</p>
-                                    </div>
-                                    <div class="phone-shop">
-                                    <img src="../assets/icons/phone.svg" alt="">
-                                    <p class="nomer-shop">+7 821 409 13 30</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="text-img-shop">
-                                     <img src="../assets/icons/rabanuchka.svg" alt="">
-                                    <div class="home-shop">
-                                    <img src="../assets/icons/home.svg" alt="">
-                                    <p class="p-shop">ул. Заводская 16</p>
-                                    </div>
-                                    <div class="phone-shop">
-                                    <img src="../assets/icons/phone.svg" alt="">
-                                    <p class="nomer-shop">+7 821 409 11 01</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="text-img-shop">
-                                     <img src="../assets/icons/Group.svg" alt="">
-                                    <div class="home-shop">
-                                    <img src="../assets/icons/home.svg" alt="">
-                                    <p class="p-shop">ул. Рабочая 1</p>
-                                    </div>
-                                    <div class="phone-shop">
-                                    <img src="../assets/icons/phone.svg" alt="">
-                                    <p class="nomer-shop">+7 821 409 13 00</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+      <section class="our_stores_section">
+        <div class="our-stores-container">
+          <div class="our_stores-shop">
+            <h2 class="text-h2-shop">Наши магазины</h2>
+            <div class="stores-shop-general">
+              <ul>
+                <li>
+                  <div class="text-img-shop">
+                    <img src="../assets/icons/market.svg" alt="" />
+                    <div class="home-shop">
+                      <img src="../assets/icons/home.svg" alt="" />
+                      <p class="p-shop">ул. Дорожная 10</p>
                     </div>
-                </div>
+                    <div class="phone-shop">
+                      <img src="../assets/icons/phone.svg" alt="" />
+                      <p class="nomer-shop">+7 904 271 35 90</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="text-img-shop">
+                    <img src="../assets/icons/parus.svg" alt="" />
+                    <div class="home-shop">
+                      <img src="../assets/icons/home.svg" alt="" />
+                      <p class="p-shop">ул. Советская 87</p>
+                    </div>
+                    <div class="phone-shop">
+                      <img src="../assets/icons/phone.svg" alt="" />
+                      <p class="nomer-shop">+7 821 409 13 30</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="text-img-shop">
+                    <img src="../assets/icons/rabanuchka.svg" alt="" />
+                    <div class="home-shop">
+                      <img src="../assets/icons/home.svg" alt="" />
+                      <p class="p-shop">ул. Заводская 16</p>
+                    </div>
+                    <div class="phone-shop">
+                      <img src="../assets/icons/phone.svg" alt="" />
+                      <p class="nomer-shop">+7 821 409 11 01</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="text-img-shop">
+                    <img src="../assets/icons/Group.svg" alt="" />
+                    <div class="home-shop">
+                      <img src="../assets/icons/home.svg" alt="" />
+                      <p class="p-shop">ул. Рабочая 1</p>
+                    </div>
+                    <div class="phone-shop">
+                      <img src="../assets/icons/phone.svg" alt="" />
+                      <p class="nomer-shop">+7 821 409 13 00</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-                 <div class="map-container">
-                        <div style="position:relative;overflow:hidden;">
-                            <a href="https://yandex.com/maps/19/syktyvkar/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Сыктывкар</a>
-                            <a href="https://yandex.com/maps/geo/respublika_komi/53000064/?ll=50.847724%2C61.663165&utm_medium=mapframe&utm_source=maps&z=14.51" style="color:#eee;font-size:12px;position:absolute;top:14px;">Республика Коми — Яндекс Карты</a>
-                            <iframe src="https://yandex.com/map-widget/v1/?ll=50.847724%2C61.663165&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA2NBIr0KDQvtGB0YHQuNGPLCDQoNC10YHQv9GD0LHQu9C40LrQsCDQmtC-0LzQuCIKDZ8oW0IVPUCAQg%2C%2C&z=14.51" width="100%" height="354" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
-                        </div>
-                    </div>
-                </div>
-            
-        </section>
+          <div class="map-container">
+            <div style="position: relative; overflow: hidden">
+              <a
+                href="https://yandex.com/maps/19/syktyvkar/?utm_medium=mapframe&utm_source=maps"
+                style="
+                  color: #eee;
+                  font-size: 12px;
+                  position: absolute;
+                  top: 0px;
+                "
+                >Сыктывкар</a
+              >
+              <a
+                href="https://yandex.com/maps/geo/respublika_komi/53000064/?ll=50.847724%2C61.663165&utm_medium=mapframe&utm_source=maps&z=14.51"
+                style="
+                  color: #eee;
+                  font-size: 12px;
+                  position: absolute;
+                  top: 14px;
+                "
+                >Республика Коми — Яндекс Карты</a
+              >
+              <iframe
+                src="https://yandex.com/map-widget/v1/?ll=50.847724%2C61.663165&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA2NBIr0KDQvtGB0YHQuNGPLCDQoNC10YHQv9GD0LHQu9C40LrQsCDQmtC-0LzQuCIKDZ8oW0IVPUCAQg%2C%2C&z=14.51"
+                width="100%"
+                height="354"
+                frameborder="0"
+                allowfullscreen="true"
+                style="position: relative"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="footer-container">
-            <div class="group-footer">
-                <ul class="ul-container">
-                   <li><a href="../index.html"><img src="../assets/icons/logo-footer.svg" alt=""></a></li>
-                   <li><a class="a-decaration" href="about.html">О компании</a></li>
-                   <li style="color: #FF6633;">Контакты</li>
-                   <li><a class="a-decaration" href="vacancies.html">Вакансии</a></li>
-                   <li>Статьи</li>
-                   <li>Политика обработки персональных данных</li>
-                </ul>
-                <div class="social-contact">
-                    <div class="icons-messenger">
-                        <ul>
-                            <li><img src="../assets/icons/instagram.svg" alt="instagram"></li>
-                            <li><img src="../assets/icons/vkontakte.svg" alt="vkontakte"></li>
-                            <li><img src="../assets/icons/facebook.svg" alt="facebook"></li>
-                            <li><img src="../assets/icons/ok.svg" alt="ok"></li>
-                        </ul>
-                    </div>
-                    <div class="contacts-phone">
-                        <img src="../assets/icons/phone.svg" alt="">
-                        <p class="phone-p">8 800 777 33 33</p>
-                    </div>
-                </div>
-                
+      <div class="footer-container">
+        <div class="group-footer">
+          <ul class="ul-container">
+            <li>
+              <a href="../index.html"
+                ><img src="../assets/icons/logo-footer.svg" alt=""
+              /></a>
+            </li>
+            <li><a class="a-decaration" href="about.html">О компании</a></li>
+            <li style="color: #ff6633">Контакты</li>
+            <li><a class="a-decaration" href="vacancies.html">Вакансии</a></li>
+            <li>Статьи</li>
+            <li>Политика обработки персональных данных</li>
+          </ul>
+          <div class="social-contact">
+            <div class="icons-messenger">
+              <ul>
+                <li>
+                  <img src="../assets/icons/instagram.svg" alt="instagram" />
+                </li>
+                <li>
+                  <img src="../assets/icons/vkontakte.svg" alt="vkontakte" />
+                </li>
+                <li>
+                  <img src="../assets/icons/facebook.svg" alt="facebook" />
+                </li>
+                <li><img src="../assets/icons/ok.svg" alt="ok" /></li>
+              </ul>
             </div>
+            <div class="contacts-phone">
+              <img src="../assets/icons/phone.svg" alt="" />
+              <p class="phone-p">8 800 777 33 33</p>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

@@ -1,81 +1,195 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/components/header.css">
-    <link rel="stylesheet" href="../css/components/footer.css">
-    <link rel="stylesheet" href="../css/pages-css/">
-    <title>Товар</title>
-</head>
-<body>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/components/header.css" />
+    <link rel="stylesheet" href="../css/components/footer.css" />
+    <link rel="stylesheet" href="../css/components/card.css" />
+    <link rel="stylesheet" href="../css/pages-css/product-page.css" />
+    <title>Товар — Северяночка</title>
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <div class="wrapper-header">
-                    <div class="logo">
-                        <img src="../assets/icons/logo.svg" alt="logo">
-                    </div>
-
-                <div class="input-box">
-                    <input id="search_input" type="text" placeholder="Найти товар">
-                    <div class="search-icon-wrap">
-                        <img class="search_icon" src="../assets/icons/search.svg" alt="Лупа">
-                    </div>
-                </div>
-
-                <nav class="right-nav">
-                    <div class="favorite-wrap">
-                        <div class="favorite">
-                            <a href="../pages/favorites.html"><img src="../assets/icons/heart.svg" alt="Избранное"></a>
-                        </div>
-                        <p>Избранное</p>
-                    </div>
-                    <div class="busket-wrap">
-                        <div class="count-view" id="count-view" hidden>1</div>
-                        <div class="busket">
-                            <img src="../assets/icons/shopping-cart.svg" alt="">
-                        </div>
-                        <p>Корзина</p>
-                    </div>
-                </nav>
+      <div class="container">
+        <div class="wrapper-header">
+          <div class="logo">
+            <a href="../index.html">
+              <img src="../assets/icons/logo.svg" alt="Северяночка" />
+            </a>
+          </div>
+          <div class="input-box">
+            <input
+              id="search_input"
+              type="text"
+              placeholder="Найти товар"
+              autocomplete="off"
+            />
+            <button class="search-icon-wrap" aria-label="Найти">
+              <img
+                class="search_icon"
+                src="../assets/icons/search.svg"
+                alt=""
+              />
+            </button>
+          </div>
+          <nav class="right-nav" aria-label="Навигация">
+            <div class="favorite-wrap">
+              <div class="favorite">
+                <a href="./favorites.html" aria-label="Избранное">
+                  <img src="../assets/icons/heart.svg" alt="" />
+                </a>
+              </div>
+              <p>Избранное</p>
             </div>
+            <div class="busket-wrap">
+              <div
+                class="count-view"
+                id="count-view"
+                hidden
+                aria-live="polite"
+              ></div>
+              <div class="busket">
+                <a href="./basket-page.html" aria-label="Корзина">
+                  <img src="../assets/icons/shopping-cart.svg" alt="" />
+                </a>
+              </div>
+              <p>Корзина</p>
+            </div>
+          </nav>
         </div>
+      </div>
     </header>
 
     <main>
- 
-</main>
+      <section class="section-product">
+        <div class="container">
+          <nav class="product-breadcrumb" aria-label="Хлебные крошки">
+            <a class="product-breadcrumb__link" href="../index.html">Главная</a>
+            <img src="../assets/icons/transition.svg" alt="" />
+            <span
+              class="product-breadcrumb__current"
+              id="product-name-breadcrumb"
+              >Товар</span
+            >
+          </nav>
 
+          <div id="product-loading" class="product-state">
+            <p>Загрузка товара…</p>
+          </div>
+          <div id="product-error" class="product-state" style="display: none">
+            <p>Товар не найден.</p>
+            <a class="btn-go-back" href="../index.html"
+              >← Вернуться на главную</a
+            >
+          </div>
+
+          <div class="product-detail" id="product-detail" style="display: none">
+            <div class="product-detail__gallery">
+              <img
+                id="product-img"
+                src=""
+                alt=""
+                onerror="
+                  this.src = '../assets/icons/img-placeholder.svg';
+                  this.style.opacity = '0.3';
+                "
+              />
+            </div>
+            <div class="product-detail__info">
+              <h1 class="product-detail__name" id="product-title"></h1>
+              <div class="product-detail__rating" id="product-rating"></div>
+              <div class="product-detail__pricing" id="product-pricing"></div>
+              <div class="product-detail__actions">
+                <button class="btn-add-to-cart-big" id="btn-add-to-cart">
+                  В корзину
+                </button>
+                <button
+                  class="btn-like-big"
+                  id="btn-favorite"
+                  aria-label="В избранное"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#ff6633"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <section
+            class="product-related"
+            id="product-related"
+            style="display: none"
+          >
+            <h2 class="product-related__title">Похожие товары</h2>
+            <div class="card-box" id="related-grid"></div>
+          </section>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">
-        <div class="footer-container">
-            <div class="group-footer">
-                <ul class="ul-container">
-                   <li><a href="../index.html"><img src="../assets/icons/logo-footer.svg" alt=""></a></li>
-                   <li><a class="a-decaration" href="./pages/about.html">О компании</a></li>
-                   <li><a class="a-decaration" href="./pages/contacts.html">Контакты</a></li>
-                   <li><a class="a-decaration" href="./pages/vacancies.html">Вакансии</a></li>
-                   <li>Статьи</li>
-                   <li>Политика обработки персональных данных</li>
-                </ul>
-                <div class="social-contact">
-                    <div class="icons-messenger">
-                        <ul>
-                            <li><img src="../assets/icons/instagram.svg" alt="instagram"></li>
-                            <li><img src="../assets/icons/vkontakte.svg" alt="vkontakte"></li>
-                            <li><img src="../assets/icons/facebook.svg" alt="facebook"></li>
-                            <li><img src="../assets/icons/ok.svg" alt="ok"></li>
-                        </ul>
-                    </div>
-                    <div class="contacts-phone">
-                        <img src="../assets/icons/phone.svg" alt="">
-                        <p class="phone-p">8 800 777 33 33</p>
-                    </div>
-                </div>
-                
+      <div class="footer-container">
+        <div class="group-footer">
+          <ul class="ul-container">
+            <li>
+              <a href="../index.html"
+                ><img src="../assets/icons/logo-footer.svg" alt="Северяночка"
+              /></a>
+            </li>
+            <li><a class="a-decaration" href="./about.html">О компании</a></li>
+            <li><a class="a-decaration" href="./contacts.html">Контакты</a></li>
+            <li>
+              <a class="a-decaration" href="./vacancies.html">Вакансии</a>
+            </li>
+            <li>Статьи</li>
+            <li>Политика обработки персональных данных</li>
+          </ul>
+          <div class="social-contact">
+            <div class="icons-messenger">
+              <ul>
+                <li>
+                  <a href="#" aria-label="Instagram"
+                    ><img src="../assets/icons/instagram.svg" alt="Instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" aria-label="ВКонтакте"
+                    ><img src="../assets/icons/vkontakte.svg" alt="ВКонтакте"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Facebook"
+                    ><img src="../assets/icons/facebook.svg" alt="Facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Одноклассники"
+                    ><img src="../assets/icons/ok.svg" alt="Одноклассники"
+                  /></a>
+                </li>
+              </ul>
             </div>
+            <div class="contacts-phone">
+              <img src="../assets/icons/phone.svg" alt="" />
+              <a class="phone-p" href="tel:88007773333">8 800 777 33 33</a>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+
+    <script type="module" src="../js/modules/product.js"></script>
+  </body>
 </html>
