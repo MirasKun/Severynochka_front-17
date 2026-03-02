@@ -10,8 +10,8 @@ body {
 }
 
 .container-favorites {
-   padding-right: 116px;
-   padding-left: 116px;
+    padding-right: 116px;
+    padding-left: 116px;
 }
 
 .transition-contact {
@@ -51,7 +51,7 @@ padding-bottom: 60px;
 font-weight: 400;
 font-size: 12px;
 line-height: 150%;
- color: white;
+color: white;
  width: 136px;
 }
 
