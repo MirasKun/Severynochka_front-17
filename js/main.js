@@ -6,7 +6,7 @@ import {
   updateFavoritesCounter,
   renderStars,
 } from "./modules/favorites.js";
-import { initSearchInput, filterProducts } from "./modules/search.js";
+import { initSearchInput } from "./modules/search.js";
 
 let allProducts = [];
 

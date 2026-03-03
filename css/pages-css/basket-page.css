@@ -233,3 +233,7 @@
 .btn-go-main:hover {
   background-color: #5aaa45;
 }
+
+.sum-1000-indicator {
+  color: red;
+}

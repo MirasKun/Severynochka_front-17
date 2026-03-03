@@ -38,9 +38,16 @@
               <p>Избранное</p>
             </div>
             <div class="busket-wrap">
-              <div class="count-view" id="count-view" hidden>1</div>
+              <div
+                class="count-view"
+                id="count-view"
+                hidden
+                aria-live="polite"
+              ></div>
               <div class="busket">
-                <img src="../assets/icons/shop-basket.svg" alt="" />
+                <a href="./basket-page.html" aria-label="Корзина">
+                  <img src="../assets/icons/shop-basket.svg" alt="" />
+                </a>
               </div>
               <p>Корзина</p>
             </div>
@@ -180,5 +187,6 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="../js/modules/single-impl.js"></script>
   </body>
 </html>

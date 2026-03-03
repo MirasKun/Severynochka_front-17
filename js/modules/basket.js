@@ -1,4 +1,10 @@
-import { getCart, saveCart, updateCartCounter, getCartCount } from "./cart.js";
+import {
+  getCart,
+  saveCart,
+  updateCartCounter,
+  getCartCount,
+  getCartTotal,
+} from "./cart.js";
 import { initSearchInput } from "./search.js";
 
 const itemsEl = document.getElementById("basket-items");
@@ -7,17 +13,29 @@ const summaryEl = document.getElementById("basket-summary");
 const summaryCount = document.getElementById("summary-count");
 const summaryTotal = document.getElementById("summary-total");
 const countEl = document.getElementById("count-view");
+const text1000 = document.getElementsByClassName("sum-1000-indicator")[0];
 
 function init() {
   updateCartCounter(countEl);
   initSearchInput(document.getElementById("search_input"), true);
   render();
+  check1000Rubles(text1000);
 
   document.getElementById("btn-order")?.addEventListener("click", () => {
-    alert("Заглушка");
+    if (getCartTotal(getCart()) > 1000) {
+      alert("Заглушка");
+    } else {
+      alert("Сумма не должна быть менее 1000");
+    }
   });
 }
-
+function check1000Rubles(text) {
+  if (getCartTotal(getCart()) > 1000) {
+    text.hidden = true;
+  } else {
+    text.hidden = false;
+  }
+}
 function render() {
   const cart = getCart();
 
@@ -90,6 +108,7 @@ itemsEl?.addEventListener("click", (e) => {
   saveCart(cart);
   updateCartCounter(countEl);
   render();
+  check1000Rubles(text1000);
 });
 
 init();
