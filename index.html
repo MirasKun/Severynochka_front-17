@@ -1,29 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/components/header.css">
-    <link rel="stylesheet" href="./css/pages-css/main-page.css">
-    <link rel="stylesheet" href="/css/components/footer.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/components/card.css">
-    <title>Severynochka</title>
-</head>
-<body>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/components/header.css" />
+    <link rel="stylesheet" href="./css/components/card.css" />
+    <link rel="stylesheet" href="./css/components/footer.css" />
+    <link rel="stylesheet" href="./css/pages-css/main-page.css" />
+    <title>Северяночка</title>
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <div class="wrapper-header">
-                    <div class="logo">
-                        <img src="./assets/icons/logo.svg" alt="logo">
-                    </div>
+      <div class="container">
+        <div class="wrapper-header">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./assets/icons/logo.svg" alt="Северяночка" />
+            </a>
+          </div>
 
-                <div class="input-box">
-                    <input id="search_input" type="text" placeholder="Найти товар">
-                    <div class="search-icon-wrap">
-                        <img class="search_icon" src="./assets/icons/search.svg" alt="Лупа">
-                    </div>
-                </div>
+          <div class="input-box">
+            <input
+              id="search_input"
+              type="text"
+              placeholder="Найти товар"
+              autocomplete="off"
+            />
+            <button class="search-icon-wrap" aria-label="Найти">
+              <img class="search_icon" src="./assets/icons/search.svg" alt="" />
+            </button>
+          </div>
 
                 <nav class="right-nav">
                     <div class="favorite-wrap">
@@ -40,101 +47,76 @@
                         <p>Корзина</p>
                     </div>
                 </nav>
+          <nav class="right-nav" aria-label="Навигация">
+            <div class="favorite-wrap">
+              <div class="favorite">
+                <a href="./pages/favorites.html" aria-label="Избранное">
+                  <img src="./assets/icons/heart.svg" alt="" />
+                </a>
+              </div>
+              <p>Избранное</p>
             </div>
+
+            <div class="busket-wrap">
+              <div
+                class="count-view"
+                id="count-view"
+                hidden
+                aria-live="polite"
+              ></div>
+              <div class="busket">
+                <a href="./pages/basket-page.html" aria-label="Корзина">
+                  <img src="./assets/icons/shopping-cart.svg" alt="" />
+                </a>
+              </div>
+              <p>Корзина</p>
+            </div>
+          </nav>
         </div>
+      </div>
     </header>
 
-    <section class="banner">
-        <div class="container">
-            <div class="wrapper-banner">
-                <div class="fruit-basket">
-                    <img src="./assets/images/fruit-basket.png" alt="Фруктовая корзина">
-                </div>
-                <p>Доставка бесплатно от 1000 ₽</p>
-            </div>
+    <section class="banner" aria-label="Акционный баннер">
+      <div class="container">
+        <div class="wrapper-banner">
+          <div class="fruit-basket">
+            <img
+              src="./assets/images/fruit-basket.png"
+              alt="Фруктовая корзина"
+            />
+          </div>
+          <p>Доставка бесплатно от 1000 ₽</p>
         </div>
+      </div>
     </section>
 
     <main>
-
-        <section class="section-stock">
-            <div class="container">
-                <div class="wrapper-stock">
-                    <div class="title-stock">
-                        <h2>Акции</h2>
-
-                        <div class="go-to-all-stock">
-                            <a href="/">Все акции</a>
-                            <img src="/assets/icons/transition.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="card-box">
-                        <!-- Структура карточки -->
-                        <div class="card">
-                            <div class="img-box-card">
-                                <img src="/assets/card-images/pancake.png" alt="">
-                                <div class="discount">
-                                    <p>-50%</p>
-                                </div>
-                                <div class="like-heart">
-                                    <img src="/assets/icons/like-heart-in_card.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-inf">
-                                <div class="card-price">
-                                    <div class="price-left">
-                                        <p class="_price">44,50 <span>₽</span></p>
-                                        <p class="with-card">С картой</p>
-                                    </div>
-                                    <div class="price-right">
-                                        <p class="regular-price">50,50 <span>₽</span></p>
-                                        <p class="regular">Обычная</p>
-                                    </div>
-                                </div>
-                                <div class="inf-abaut-card">
-                                    <p>Г/Ц Блинчики с мясом вес, Россия</p>
-                                </div>
-                                <div class="card-rating">
-                                    <img src="https://zpatky.files.wordpress.com/2019/08/hvezdy-2.jpg" alt="">
-                                </div>
-                                <button class="add-to-cart">В корзину</button>
-                            </div>
-                        </div>
-                        <!-- ---------- -->
-                    </div>
-                </div>
+      <section class="section-stock" aria-labelledby="stock-title">
+        <div class="container">
+          <div class="wrapper-stock">
+            <div class="title-stock">
+              <h2 id="stock-title">Акции</h2>
+              <div class="go-to-all-stock">
+                <a href="#">Все акции</a>
+              </div>
             </div>
-        </section>
+            <div class="card-box" id="card-box" role="list"></div>
+          </div>
+        </div>
+      </section>
 
+      <section class="section-offers" aria-labelledby="offers-title">
+        <div class="container">
+          <div class="wrapper-offers">
+            <h2 id="offers-title">Специальные предложения</h2>
 
-
-        
-        <section class="section-offers">
-            <div class="container">
-                <div class="wrapper-offers">
-                    <h2>Специальные предложения</h2>
-
-                    <div class="card-offers">
-                        <div class="card-offers-left">
-                            <div class="content p-r">
-                                <h3>Оформите карту «Северяночка»</h3>
-                                <p class="p-a">И получайте бонусы при покупке <br> в магазинах и на сайте</p>
-                            </div>
-                            <div class="img-offers-box-left">
-                                <img src="./assets/images/card-offers-card.svg" alt="">
-                            </div>
-                        </div>
-
-                        <div class="card-offers-right">
-                            <div class="content">
-                                <h3>Покупайте акционные товары</h3>
-                                <p>И получайте вдвое больше бонусов</p>
-                            </div>
-                            <div class="img-offers-box-right">
-                                <img src="./assets/images/basket-offers-card.svg" alt="">
-                            </div>
-                        </div>
-                    </div>    
+            <div class="card-offers">
+              <div class="card-offers-left">
+                <div class="content p-r">
+                  <h3>Оформите карту «Северяночка»</h3>
+                  <p class="p-a">
+                    И получайте бонусы при покупке<br />в магазинах и на сайте
+                  </p>
                 </div>
             </div>
         </section>
@@ -149,40 +131,105 @@
                             <iframe src="https://yandex.com/map-widget/v1/?ll=50.847724%2C61.663165&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA2NBIr0KDQvtGB0YHQuNGPLCDQoNC10YHQv9GD0LHQu9C40LrQsCDQmtC-0LzQuCIKDZ8oW0IVPUCAQg%2C%2C&z=14.51" width="100%" height="354" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
                         </div>
                     </div>
+                <div class="img-offers-box-left">
+                  <img
+                    src="./assets/images/card-offers-card.svg"
+                    alt="Карта Северяночка"
+                  />
                 </div>
-            </div>
-        </section>
+              </div>
 
+              <div class="card-offers-right">
+                <div class="content">
+                  <h3>Покупайте акционные товары</h3>
+                  <p>И получайте вдвое больше бонусов</p>
+                </div>
+                <div class="img-offers-box-right">
+                  <img
+                    src="./assets/images/basket-offers-card.svg"
+                    alt="Корзина с товарами"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-stores" aria-labelledby="stores-title">
+        <div class="container">
+          <div class="wrapper-stores">
+            <h2 id="stores-title">Наши магазины</h2>
+            <div class="map-container">
+              <iframe
+                src="https://yandex.com/map-widget/v1/?ll=50.847724%2C61.663165&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA2NBIr0KDQvtGB0YHQuNGPLCDQoNC10YHQv9GD0LHQu9C40LrQsCDQmtC-0LzQuCIKDZ8oW0IVPUCAQg%2C%2C&z=14.51"
+                title="Наши магазины на карте"
+                width="100%"
+                height="354"
+                frameborder="0"
+                allowfullscreen="true"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="footer-container">
-            <div class="group-footer">
-                <ul class="ul-container">
-                    <li><img src="../assets/icons/logo-footer.svg" alt=""></li>
-                    <li><a class="a-decaration" href="./pages/about.html">О компании</a></li>
-                    <li><a class="a-decaration" href="./pages/contacts.html">Контакты</a></li>
-                    <li><a class="a-decaration" href="./pages/vacancies.html">Вакансии</a></li>
-                    <li>Статьи</li>
-                    <li>Политика обработки персональных данных</li>
-                </ul>
-                <div class="social-contact">
-                    <div class="icons-messenger">
-                        <ul>
-                            <li><img src="../assets/icons/instagram.svg" alt="instagram"></li>
-                            <li><img src="../assets/icons/vkontakte.svg" alt="vkontakte"></li>
-                            <li><img src="../assets/icons/facebook.svg" alt="facebook"></li>
-                            <li><img src="../assets/icons/ok.svg" alt="ok"></li>
-                        </ul>
-                    </div>
-                    <div class="contacts-phone">
-                        <img src="../assets/icons/phone.svg" alt="">
-                        <p class="phone-p">8 800 777 33 33</p>
-                    </div>
-                </div>
+      <div class="footer-container">
+        <div class="group-footer">
+          <ul class="ul-container">
+            <li>
+              <a href="./index.html">
+                <img src="./assets/icons/logo-footer.svg" alt="Северяночка" />
+              </a>
+            </li>
+            <li>
+              <a class="a-decaration" href="./pages/about.html">О компании</a>
+            </li>
+            <li>
+              <a class="a-decaration" href="./pages/contacts.html">Контакты</a>
+            </li>
+            <li>
+              <a class="a-decaration" href="./pages/vacancies.html">Вакансии</a>
+            </li>
+            <li>Статьи</li>
+            <li>Политика обработки персональных данных</li>
+          </ul>
+          <div class="social-contact">
+            <div class="icons-messenger">
+              <ul>
+                <li>
+                  <a href="#" aria-label="Instagram"
+                    ><img src="./assets/icons/instagram.svg" alt="Instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" aria-label="ВКонтакте"
+                    ><img src="./assets/icons/vkontakte.svg" alt="ВКонтакте"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Facebook"
+                    ><img src="./assets/icons/facebook.svg" alt="Facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Одноклассники"
+                    ><img src="./assets/icons/ok.svg" alt="Одноклассники"
+                  /></a>
+                </li>
+              </ul>
             </div>
+            <div class="contacts-phone">
+              <img src="./assets/icons/phone.svg" alt="" />
+              <a class="phone-p" href="tel:88007773333">8 800 777 33 33</a>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
-    <script src="./js/main.js"></script>
-</body>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
 </html>

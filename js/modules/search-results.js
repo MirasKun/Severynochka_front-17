@@ -1,49 +1,49 @@
-import { API_CONFIG } from "./api_details.js";
-import { addToCart, updateCartCounter } from "./modules/cart.js";
 import {
-  toggleFavorite,
-  isFavorite,
-  updateFavoritesCounter,
-  renderStars,
-} from "./modules/favorites.js";
-import { initSearchInput, filterProducts } from "./modules/search.js";
+  fetchSearchResults,
+  loadSearchQuery,
+  initSearchInput,
+} from "./search.js";
+import { addToCart, updateCartCounter } from "./cart.js";
+import { toggleFavorite, isFavorite, renderStars } from "./favorites.js";
 
-let allProducts = [];
-
-const cardBox = document.querySelector(".card-box");
+const grid = document.getElementById("search-results-grid");
+const emptyState = document.getElementById("search-empty");
+const queryLabel = document.getElementById("search-query-label");
+const resultsCount = document.getElementById("results-count");
 const countEl = document.getElementById("count-view");
-const searchInput = document.getElementById("search_input");
+
+let searchProducts = [];
 
 async function init() {
   updateCartCounter(countEl);
-  updateFavoritesCounter();
-  initSearchInput(searchInput);
-  await loadProducts();
-}
+  initSearchInput(document.getElementById("search_input"));
 
-async function loadProducts() {
-  try {
-    cardBox.innerHTML = '<p class="loading-text">Загрузка товаров…</p>';
-    const res = await fetch(
-      `${API_CONFIG.BASE_URL}${API_CONFIG.ENDPOINTS.PRODUCTS}`,
-    );
-    if (!res.ok) throw new Error(`Ошибка: ${res.status}`);
-    allProducts = await res.json();
-    renderProducts(allProducts);
-  } catch (err) {
-    console.error("Ошибка загрузки товаров:", err);
-    cardBox.innerHTML =
-      '<p class="error-text">Не удалось загрузить товары. Попробуйте позже.</p>';
-  }
-}
+  const query = loadSearchQuery();
+  if (queryLabel) queryLabel.textContent = `«${query}»`;
 
-function renderProducts(products) {
-  if (!products.length) {
-    cardBox.innerHTML = '<p class="empty-text">Товары не найдены.</p>';
+  if (!query) {
+    emptyState.hidden = false;
     return;
   }
 
-  cardBox.innerHTML = products.map(buildCardHTML).join("");
+  try {
+    grid.innerHTML = '<p class="loading-text">Поиск…</p>';
+    searchProducts = await fetchSearchResults(query);
+
+    if (!searchProducts.length) {
+      grid.innerHTML = "";
+      emptyState.hidden = false;
+      return;
+    }
+
+    if (resultsCount)
+      resultsCount.textContent = `Найдено: ${searchProducts.length} товаров`;
+    grid.innerHTML = searchProducts.map(buildCardHTML).join("");
+  } catch (err) {
+    console.error(err);
+    grid.innerHTML =
+      '<p class="error-text">Ошибка поиска. Попробуйте ещё раз.</p>';
+  }
 }
 
 function buildCardHTML(product) {
@@ -66,14 +66,9 @@ function buildCardHTML(product) {
   return `
     <div class="card" data-id="${product.id}">
       <div class="img-box-card">
-<img 
-  src="${product.img}" 
-  alt="${product.name}" 
-  onerror="this.src='../assets/images/placeholder.png';"
-  loading="lazy"
->
+        <img src="${product.img}" alt="${product.name}" loading="lazy">
         ${product.discount ? `<div class="discount"><p>${product.discount}</p></div>` : ""}
-        <button class="like-heart ${favorited ? "is-favorite" : ""}" aria-label="Добавить в избранное">
+        <button class="like-heart ${favorited ? "is-favorite" : ""}" aria-label="В избранное">
           <svg width="20" height="20" viewBox="0 0 24 24"
             fill="${favorited ? "#FF6633" : "none"}"
             stroke="#FF6633" stroke-width="2">
@@ -90,12 +85,11 @@ function buildCardHTML(product) {
     </div>`;
 }
 
-cardBox.addEventListener("click", (e) => {
+grid?.addEventListener("click", (e) => {
   const card = e.target.closest(".card");
   if (!card) return;
-
   const id = Number(card.dataset.id);
-  const product = allProducts.find((p) => p.id === id);
+  const product = searchProducts.find((p) => p.id === id);
   if (!product) return;
 
   if (e.target.closest(".add-to-cart")) {
@@ -106,13 +100,10 @@ cardBox.addEventListener("click", (e) => {
 
   if (e.target.closest(".like-heart")) {
     toggleFavorite(product);
-
-    const heartBtn = card.querySelector(".like-heart");
+    const btn = card.querySelector(".like-heart");
     const now = isFavorite(id);
-    heartBtn.classList.toggle("is-favorite", now);
-    heartBtn
-      .querySelector("path")
-      .setAttribute("fill", now ? "#FF6633" : "none");
+    btn.classList.toggle("is-favorite", now);
+    btn.querySelector("path").setAttribute("fill", now ? "#FF6633" : "none");
   }
 });
 

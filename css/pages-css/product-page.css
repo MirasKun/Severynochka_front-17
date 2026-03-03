@@ -1,7 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.section-product {
+  padding: 40px 0 100px;
 }
 
 /* --------- click-info  --------- */
