@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/components/header.css" />
+    <link rel="stylesheet" href="../css/components/card.css" />
+    <link rel="stylesheet" href="../css/components/footer.css" />
+    <link rel="stylesheet" href="../css/pages-css/searchResult-page.css" />
+    <title>Результаты поиска — Северяночка</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="wrapper-header">
+          <div class="logo">
+            <a href="../index.html">
+              <img src="../assets/icons/logo.svg" alt="Северяночка" />
+            </a>
+          </div>
+
+          <div class="input-box">
+            <input
+              id="search_input"
+              type="text"
+              placeholder="Найти товар"
+              autocomplete="off"
+            />
+            <button class="search-icon-wrap" aria-label="Найти">
+              <img
+                class="search_icon"
+                src="../assets/icons/search.svg"
+                alt=""
+              />
+            </button>
+          </div>
+
+          <nav class="right-nav" aria-label="Навигация">
+            <div class="favorite-wrap">
+              <div class="favorite">
+                <a href="./favorites.html" aria-label="Избранное">
+                  <img src="../assets/icons/heart.svg" alt="" />
+                </a>
+              </div>
+              <p>Избранное</p>
+            </div>
+            <div class="busket-wrap">
+              <div
+                class="count-view"
+                id="count-view"
+                hidden
+                aria-live="polite"
+              ></div>
+              <div class="busket">
+                <a href="./basket-page.html" aria-label="Корзина">
+                  <img src="../assets/icons/shopping-cart-white.svg" alt="" />
+                </a>
+              </div>
+              <p>Корзина</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-search-results">
+        <div class="container">
+          <nav class="breadcrumb" aria-label="Хлебные крошки">
+            <a class="breadcrumb__link" href="../index.html">Главная</a>
+            <img src="../assets/icons/transition.svg" alt="" />
+            <span class="breadcrumb__current">Результаты поиска</span>
+          </nav>
+
+          <div class="search-results-header">
+            <h1>Результаты поиска: <span id="search-query-label"></span></h1>
+            <p class="results-count" id="results-count"></p>
+          </div>
+
+          <div class="card-box" id="search-results-grid" role="list"></div>
+
+          <div id="search-empty" class="search-empty" hidden>
+            <p>По вашему запросу ничего не найдено.</p>
+            <a class="btn-go-main" href="../index.html">Вернуться на главную</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="group-footer">
+          <ul class="ul-container">
+            <li>
+              <a href="../index.html">
+                <img src="../assets/icons/logo-footer.svg" alt="Северяночка" />
+              </a>
+            </li>
+            <li><a class="a-decaration" href="./about.html">О компании</a></li>
+            <li><a class="a-decaration" href="./contacts.html">Контакты</a></li>
+            <li>
+              <a class="a-decaration" href="./vacancies.html">Вакансии</a>
+            </li>
+            <li>Статьи</li>
+            <li>Политика обработки персональных данных</li>
+          </ul>
+          <div class="social-contact">
+            <div class="icons-messenger">
+              <ul>
+                <li>
+                  <a href="#" aria-label="Instagram"
+                    ><img src="../assets/icons/instagram.svg" alt="Instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" aria-label="ВКонтакте"
+                    ><img src="../assets/icons/vkontakte.svg" alt="ВКонтакте"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Facebook"
+                    ><img src="../assets/icons/facebook.svg" alt="Facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Одноклассники"
+                    ><img src="../assets/icons/ok.svg" alt="Одноклассники"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="contacts-phone">
+              <img src="../assets/icons/phone.svg" alt="" />
+              <a class="phone-p" href="tel:88007773333">8 800 777 33 33</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="../js/modules/search-results.js"></script>
+  </body>
+</html>

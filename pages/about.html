@@ -1,148 +1,184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/components/about.css">
-    <link rel="stylesheet" href="../css/components/header.css">
-    <link rel="stylesheet" href="../css/components/footer.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/components/about.css" />
+    <link rel="stylesheet" href="../css/components/header.css" />
+    <link rel="stylesheet" href="../css/components/footer.css" />
     <title>О компании</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <div class="wrapper-header">
-                    <div class="logo">
-                        <img src="../assets/icons/logo.svg" alt="logo">
-                    </div>
+      <div class="container">
+        <div class="wrapper-header">
+          <div class="logo">
+            <img src="../assets/icons/logo.svg" alt="logo" />
+          </div>
 
-                <div class="input-box">
-                    <input id="search_input" type="text" placeholder="Найти товар">
-                    <div class="search-icon-wrap">
-                        <img class="search_icon" src="../assets/icons/search.svg" alt="Лупа">
-                    </div>
-                </div>
-
-                <nav class="right-nav">
-                    <div class="favorite-wrap">
-                        <div class="favorite">
-                            <a href="../pages/favorites.html"><img src="../assets/icons/heart.svg" alt="Избранное"></a>
-                        </div>
-                        <p>Избранное</p>
-                    </div>
-                    <div class="busket-wrap">
-                        <div class="count-view" id="count-view" hidden>1</div>
-                        <div class="busket">
-                            <a href="../pages/basket-page.html"><img src="../assets/icons/shopping-cart.svg" alt=""></a>
-                        </div>
-                        <p>Корзина</p>
-                    </div>
-                </nav>
+          <div class="input-box">
+            <input id="search_input" type="text" placeholder="Найти товар" />
+            <div class="search-icon-wrap">
+              <img
+                class="search_icon"
+                src="../assets/icons/search.svg"
+                alt="Лупа"
+              />
             </div>
+          </div>
+
+          <nav class="right-nav">
+            <div class="favorite-wrap">
+              <div class="favorite">
+                <a href="../pages/favorites.html"
+                  ><img src="../assets/icons/heart.svg" alt="Избранное"
+                /></a>
+              </div>
+              <p>Избранное</p>
+            </div>
+            <div class="busket-wrap">
+              <div class="count-view" id="count-view" hidden>1</div>
+              <div class="busket">
+                <img src="../assets/icons/shop-basket.svg" alt="" />
+              </div>
+              <p>Корзина</p>
+            </div>
+          </nav>
         </div>
+      </div>
     </header>
 
-    <main>  
-        <div class="container-company">
-            <div class="block-company">
-            <div class="transition">
-                <a class="main-company" href="../index.html">Главная</a>
-                <img src="../assets/icons/transition.svg" alt="icon-">
-                <a class="about-company" href="./about.html">О компании</a>
-            </div>
-            </div>
+    <main>
+      <div class="container-company">
+        <div class="block-company">
+          <div class="transition">
+            <a class="main-company" href="../index.html">Главная</a>
+            <img src="../assets/icons/transition.svg" alt="icon-" />
+            <a class="about-company" href="./about.html">О компании</a>
+          </div>
         </div>
+      </div>
 
-        <section class="company-section">
-            <div class="container">
-                <div class="wrapper-company">
-                    <div class="company-info">
-                        <h1 class="company-title">О компании</h1>
-                        <p class="company-subtitle">
-                        Мы непрерывно развиваемся и <br> работаем над совершенствованием сервиса, <br> 
-                        заботимся о наших клиентах, <br> стремимся к лучшему будущему.
-                        </p>
-                    </div>    
-                    <div class="company-images">
-                        <img class="company-bg" src="../assets/icons/Vector.svg">
-                        <img class="company-photo" src="../assets/icons/Group 7104.svg">
-                        <img class="company-bg-images" src="../assets/icons/Group 7105.svg" alt="fan">
-                    </div>
-                </div>
+      <section class="company-section">
+        <div class="container">
+          <div class="wrapper-company">
+            <div class="company-info">
+              <h1 class="company-title">О компании</h1>
+              <p class="company-subtitle">
+                Мы непрерывно развиваемся и <br />
+                работаем над совершенствованием сервиса, <br />
+                заботимся о наших клиентах, <br />
+                стремимся к лучшему будущему.
+              </p>
             </div>
-        </section>
-
-        <section class="pros-company">
-            <div class="container">
-                <div class="wrapper-pros">
-                    <div class="pros-item">
-                            <img class="check-icons" src="../assets/icons/check.svg" alt="">
-                        <div class="company-experience-pros-1">
-                            <p class="pros-label">Мы занимаемся <br> розничной торговлей</p>
-                            <h3 class="pros-title">Более 20 лет.</h3>
-                        </div>
-                    </div>
-                    <div class="pros-item">
-                            <img class="check-icons" src="../assets/icons/check.svg" alt="">
-                        <div class="company-experience-pros-2">
-                            <p class="pros-label">Основная миссия компании</p>
-                            <h3 class="pros-title">Максимальное качество товаров и услуг по доступной цене.</h3>
-                        </div>
-                    </div>
-                    <div class="pros-item">
-                            <img class="check-icons" src="../assets/icons/check.svg" alt="">
-                        <div class="company-experience-pros-3">
-                            <p class="pros-label">Отличительная черта нашей сети</p>
-                            <h3 class="pros-title">Здоровая и полезная продукция местного производства ваших магазинов.</h3>
-                        </div>
-                    </div>
-                </div>
+            <div class="company-images">
+              <img class="company-bg" src="../assets/icons/Vector.svg" />
+              <img class="company-photo" src="../assets/icons/Group 7104.svg" />
+              <img
+                class="company-bg-images"
+                src="../assets/icons/Group 7105.svg"
+                alt="fan"
+              />
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="banner-smail-section">
-            <div class="container">
-                <div class="banner-wrapper">
-                    <img class="banner-smail" src="../assets/icons/main-logo.svg" alt="Северяночка">
-                    <div class="triangle-banner"></div>
-                    <div class="banner-inner">
-                        <p class="banner-text">Спасибо за то, что вы с нами. Северяночка, везет всегда!</p>
-                    </div>
-                </div>
+      <section class="pros-company">
+        <div class="container">
+          <div class="wrapper-pros">
+            <div class="pros-item">
+              <img class="check-icons" src="../assets/icons/check.svg" alt="" />
+              <div class="company-experience-pros-1">
+                <p class="pros-label">
+                  Мы занимаемся <br />
+                  розничной торговлей
+                </p>
+                <h3 class="pros-title">Более 20 лет.</h3>
+              </div>
             </div>
-        </section>
+            <div class="pros-item">
+              <img class="check-icons" src="../assets/icons/check.svg" alt="" />
+              <div class="company-experience-pros-2">
+                <p class="pros-label">Основная миссия компании</p>
+                <h3 class="pros-title">
+                  Максимальное качество товаров и услуг по доступной цене.
+                </h3>
+              </div>
+            </div>
+            <div class="pros-item">
+              <img class="check-icons" src="../assets/icons/check.svg" alt="" />
+              <div class="company-experience-pros-3">
+                <p class="pros-label">Отличительная черта нашей сети</p>
+                <h3 class="pros-title">
+                  Здоровая и полезная продукция местного производства ваших
+                  магазинов.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="banner-smail-section">
+        <div class="container">
+          <div class="banner-wrapper">
+            <img
+              class="banner-smail"
+              src="../assets/icons/main-logo.svg"
+              alt="Северяночка"
+            />
+            <div class="triangle-banner"></div>
+            <div class="banner-inner">
+              <p class="banner-text">
+                Спасибо за то, что вы с нами. Северяночка, везет всегда!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-     <footer class="footer">
-        <div class="footer-container">
-            <div class="group-footer">
-                <ul class="ul-container">
-                   <li><a href="../index.html"><img src="../assets/icons/logo-footer.svg" alt=""></a></li>
-                   <li style="color: #FF6633;">О компании</li>
-                   <li><a class="a-decaration" href="../pages/contacts.html">Контакты</a></li>
-                   <li><a class="a-decaration" href="vacancies.html">Вакансии</a></li>
-                   <li>Статьи</li>
-                   <li>Политика обработки персональных данных</li>
-                </ul>
-                <div class="social-contact">
-                    <div class="icons-messenger">
-                        <ul>
-                            <li><img src="../assets/icons/instagram.svg" alt="instagram"></li>
-                            <li><img src="../assets/icons/vkontakte.svg" alt="vkontakte"></li>
-                            <li><img src="../assets/icons/facebook.svg" alt="facebook"></li>
-                            <li><img src="../assets/icons/ok.svg" alt="ok"></li>
-                        </ul>
-                    </div>
-                    <div class="contacts-phone">
-                        <img src="../assets/icons/phone.svg" alt="">
-                        <p class="phone-p">8 800 777 33 33</p>
-                    </div>
-                </div>
-                
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="group-footer">
+          <ul class="ul-container">
+            <li>
+              <a href="../index.html"
+                ><img src="../assets/icons/logo-footer.svg" alt=""
+              /></a>
+            </li>
+            <li style="color: #ff6633">О компании</li>
+            <li>
+              <a class="a-decaration" href="../pages/contacts.html">Контакты</a>
+            </li>
+            <li><a class="a-decaration" href="vacancies.html">Вакансии</a></li>
+            <li>Статьи</li>
+            <li>Политика обработки персональных данных</li>
+          </ul>
+          <div class="social-contact">
+            <div class="icons-messenger">
+              <ul>
+                <li>
+                  <img src="../assets/icons/instagram.svg" alt="instagram" />
+                </li>
+                <li>
+                  <img src="../assets/icons/vkontakte.svg" alt="vkontakte" />
+                </li>
+                <li>
+                  <img src="../assets/icons/facebook.svg" alt="facebook" />
+                </li>
+                <li><img src="../assets/icons/ok.svg" alt="ok" /></li>
+              </ul>
             </div>
+            <div class="contacts-phone">
+              <img src="../assets/icons/phone.svg" alt="" />
+              <p class="phone-p">8 800 777 33 33</p>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
-</html> 
+  </body>
+</html>
