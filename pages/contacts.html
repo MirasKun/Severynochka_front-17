@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/pages-css/contacts-page.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/components/header.css" />
+
     <title>Контакты</title>
   </head>
   <body>
@@ -13,7 +14,9 @@
       <div class="container">
         <div class="wrapper-header">
           <div class="logo">
-            <img src="../assets/icons/logo.svg" alt="logo" />
+            <a href="/index.html">
+              <img src="/assets/icons/logo.svg" alt="Северяночка" />
+            </a>
           </div>
 
           <div class="input-box">
@@ -37,9 +40,16 @@
               <p>Избранное</p>
             </div>
             <div class="busket-wrap">
-              <div class="count-view" id="count-view" hidden>1</div>
+              <div
+                class="count-view"
+                id="count-view"
+                hidden
+                aria-live="polite"
+              ></div>
               <div class="busket">
-                <img src="../assets/icons/shopping-cart-white.svg" alt="" />
+                <a href="./basket-page.html" aria-label="Корзина">
+                  <img src="../assets/icons/shop-basket.svg" alt="" />
+                </a>
               </div>
               <p>Корзина</p>
             </div>
@@ -47,6 +57,7 @@
         </div>
       </div>
     </header>
+
     <main>
       <section class="transition_section">
         <div class="container-contacts">
@@ -66,39 +77,13 @@
                     <p class="nomer-p">+7 821 409 26 19</p>
                   </div>
                 </div>
-<<<<<<< HEAD
-                <div class="contact-about-general">
-                    <h2 class="h2-text">Контакты</h2>
-                    <div class="general-contact">
-                        <div class="Accounting-warehouse">  
-                            <div class="number-contact">
-                                <img class="img-home" src="../assets/icons/home.svg" alt="">
-                                <div class="number-contact-text">
-                                <p class="text-p">Бухгалтерия, склад</p>
-                                <p class="nomer-p">+7 821 409 26 19</p>
-                                </div>
-                            </div>
-                            <div class="home-contact-img-text">
-                                <img class="img-home" src= "../assets/icons/percent.svg" alt="">
-                                <div class="home-contact-img-text-p">
-                                <p class="text-p">Вопросы по системе лояльности</p>
-                                <p class="nomer-p">+7 908 716 33 97</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-=======
+
                 <div class="home-contact-img-text">
-                  <img
-                    class="img-home"
-                    src="../assets/icons/percent.svg"
-                    alt=""
-                  />
-                  <div class="home-contact-img-text-p">
+                    <img class="img-home" src= "../assets/icons/percent.svg" alt="">
+                    <div class="home-contact-img-text-p">
                     <p class="text-p">Вопросы по системе лояльности</p>
                     <p class="nomer-p">+7 908 716 33 97</p>
-                  </div>
->>>>>>> 7df3d21f022e2467d0eeb269819545b97749e597
+                    </div>
                 </div>
               </div>
             </div>
@@ -241,5 +226,7 @@
         </div>
       </div>
     </footer>
+
+    <script type="module" src="../js/modules/single-impl.js"></script>
   </body>
 </html>

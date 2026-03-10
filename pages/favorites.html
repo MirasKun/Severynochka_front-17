@@ -15,32 +15,29 @@
       <div class="container">
         <div class="wrapper-header">
           <div class="logo">
-            <a href="../index.html">
-              <img src="../assets/icons/logo.svg" alt="Северяночка" />
+            <a href="/index.html">
+              <img src="../assets/icons/logo.svg" alt="logo" />
             </a>
           </div>
+
           <div class="input-box">
-            <input
-              id="search_input"
-              type="text"
-              placeholder="Найти товар"
-              autocomplete="off"
-            />
-            <button class="search-icon-wrap" aria-label="Найти">
+            <input id="search_input" type="text" placeholder="Найти товар" />
+            <div class="search-icon-wrap">
               <img
                 class="search_icon"
                 src="../assets/icons/search.svg"
-                alt=""
+                alt="Лупа"
               />
-            </button>
+            </div>
           </div>
-          <nav class="right-nav" aria-label="Навигация">
+
+          <nav class="right-nav">
             <div class="favorite-wrap">
               <div class="favorite">
                 <img
                   class="img-favorite"
                   src="../assets/icons/Shape (Stroke).svg"
-                  alt=""
+                  alt="Избранное"
                 />
               </div>
               <p class="p-favotite">Избранное</p>
@@ -54,7 +51,7 @@
               ></div>
               <div class="busket">
                 <a href="./basket-page.html" aria-label="Корзина">
-                  <img src="../assets/icons/shopping-cart-white.svg" alt="" />
+                  <img src="../assets/icons/shop-basket.svg" alt="" />
                 </a>
               </div>
               <p>Корзина</p>
@@ -141,7 +138,8 @@
         </div>
       </div>
     </footer>
-
+    
+    <script type="module" src="../js/modules/single-impl.js"></script>
     <script type="module" src="../js/modules/favorites.js"></script>
   </body>
 </html>

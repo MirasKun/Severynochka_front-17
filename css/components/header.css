@@ -42,7 +42,33 @@ header {
   right: 8px;
   top: 8px;
   cursor: pointer;
+  background: none;
+  border: none;
 }
+
+
+.search-suggestions{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  z-index: 100;
+}
+
+.search-suggestions div{
+  padding: 10px;
+  cursor: pointer;
+}
+
+.search-suggestions div:hover{
+  background: #f2f2f2;
+}
+
 
 .right-nav {
   display: flex;
@@ -87,16 +113,6 @@ header {
   right: 13px;
   bottom: 43px;
 
-<<<<<<< HEAD
-    width: 11px;
-    text-align: center;
-    height: 11px;
-    background-color: #FF6633;
-    border-radius: 4px;
-
-    color: #fff;
-    font-size: 9px;
-=======
   width: 11px;
   height: 11px;
   padding: 2px 4px;
@@ -105,7 +121,6 @@ header {
 
   color: #fff;
   font-size: 7px;
->>>>>>> 7df3d21f022e2467d0eeb269819545b97749e597
 }
 .right-nav .busket-wrap .busket {
   height: 24px;
@@ -142,4 +157,7 @@ header {
 .wrapper-banner > p {
   font-size: 48px;
   font-weight: 700;
+}
+.fruit-basket {
+  max-height: 200px;
 }

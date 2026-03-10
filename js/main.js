@@ -6,7 +6,9 @@ import {
   updateFavoritesCounter,
   renderStars,
 } from "./modules/favorites.js";
-import { initSearchInput, filterProducts } from "./modules/search.js";
+import { initSearchInput } from "./modules/search.js";
+
+
 
 let allProducts = [];
 
@@ -117,3 +119,6 @@ cardBox.addEventListener("click", (e) => {
 });
 
 init();
+
+const input = document.getElementById("search_input");
+initSearchInput(input);
