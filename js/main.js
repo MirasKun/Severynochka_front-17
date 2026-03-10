@@ -8,6 +8,8 @@ import {
 } from "./modules/favorites.js";
 import { initSearchInput } from "./modules/search.js";
 
+
+
 let allProducts = [];
 
 const cardBox = document.querySelector(".card-box");
@@ -117,3 +119,6 @@ cardBox.addEventListener("click", (e) => {
 });
 
 init();
+
+const input = document.getElementById("search_input");
+initSearchInput(input);

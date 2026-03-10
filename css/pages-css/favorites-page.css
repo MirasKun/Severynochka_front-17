@@ -18,6 +18,7 @@
 .breadcrumb__current {
   color: #414141;
   font-weight: 500;
+}
 .container-favorites {
     padding-right: 116px;
     padding-left: 116px;
@@ -46,9 +47,7 @@
   font-size: 14px;
   padding: 6px 10px;
   border-radius: 4px;
-  transition:
-    color 0.15s ease,
-    background 0.15s ease;
+  transition: 0.5s
 }
 
 .delete-btn:hover {
