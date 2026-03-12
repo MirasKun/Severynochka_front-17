@@ -41,7 +41,12 @@ export function isFavorite(productId) {
   return getFavorites().some((item) => item.id === productId);
 }
 
-export function renderStars(rating = 0) {
+export function renderStars(rating) {
+  if (typeof rating === "string" && rating.startsWith("http")) {
+    return `<img src="${rating}" alt="rating" style="height: 16px; object-fit: contain;">`;
+  }
+
+  let numericRating = parseFloat(rating) || 0;
   let html = "";
   for (let i = 1; i <= 5; i++) {
     const fill = Math.min(100, Math.max(0, (rating - (i - 1)) * 100));
