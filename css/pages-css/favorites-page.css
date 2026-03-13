@@ -1,3 +1,7 @@
+.section-favotites {
+  padding: 40px 0 190px;
+}
+
 .breadcrumb {
   display: flex;
   align-items: center;
@@ -95,6 +99,3 @@
   background-color: #5aaa45;
 }
 
-.section-favotites {
-  padding: 40px 0 80px;
-}
