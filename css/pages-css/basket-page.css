@@ -1,5 +1,5 @@
 .section-basket {
-  padding: 40px 0 100px;
+  padding: 40px 0 116px;
 }
 
 .basket-breadcrumb {
@@ -96,6 +96,10 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  background-color: #70c05b;
+  height: 40px;
+  border-radius: 4px;
+  padding: 0 8px;
 }
 
 .qty-btn {
@@ -103,8 +107,8 @@
   height: 32px;
   border: 1px solid #70c05b;
   border-radius: 4px;
-  background: #fff;
-  color: #70c05b;
+  background: #70c05b;
+  color: #ffffff;
   font-size: 18px;
   line-height: 1;
   cursor: pointer;
@@ -126,6 +130,7 @@
   text-align: center;
   font-size: 16px;
   font-weight: 600;
+  color: #ffffff;
 }
 
 .basket-item__subtotal {
@@ -152,11 +157,11 @@
 
 .basket-summary {
   width: 280px;
+  height: 470px;
   flex-shrink: 0;
-  background: #fff;
+  background: transparent;
   border-radius: 8px;
   padding: 24px;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -169,37 +174,74 @@
   font-weight: 700;
 }
 
+.summary-total {
+  font-size: 24px;
+  font-weight: 700;
+}
+
 .summary-row {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
-  color: #606060;
-}
-
-.summary-row--total {
-  font-size: 18px;
   font-weight: 700;
   color: #414141;
-  padding-top: 8px;
-  border-top: 1px solid #f0f0f0;
+}
+
+.line-summary-row-height {
+  border: 1px solid #f3f2f1;
+}
+
+.summary-row-summary-row--total {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-row-application {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 36px;
+}
+
+.bonus-summary-row-100 {
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.bonuses-summary-row-100 {
+  font-size: 12px;
+  color: #70c05b;
+}
+
+.bonuses-summary-row-100 b {
+  font-weight: 400;
+  color: #70c05b;
+}
+
+.cym-severyanochka {
+  font-size: 16px;
+  font-weight: 400;
+  color: #8f8f8f;
 }
 
 .btn-order {
   width: 100%;
   height: 48px;
   background-color: #ff6633;
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.2s ease;
-  margin-top: 8px;
 }
 
 .btn-order:hover {
-  background-color: #e55520;
+  background-color: #fcd5ba;
+  color: #ff6633;
 }
 
 .basket-empty {
@@ -235,5 +277,10 @@
 }
 
 .sum-1000-indicator {
-  color: red;
+  width: 215px;
+  background-color: #d80000;
+  color: #fff;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 11px;
 }

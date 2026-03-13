@@ -6,6 +6,7 @@ import {
   renderStars,
   buildCardHTML,
 } from "./favorites.js";
+import { initSearchInput } from "./search.js";
 
 const loadingEl = document.getElementById("product-loading");
 const errorEl = document.getElementById("product-error");
@@ -15,6 +16,7 @@ const countEl = document.getElementById("count-view");
 
 async function init() {
   updateCartCounter(countEl);
+  initSearchInput(document.getElementById("search_input"), true);
 
   const params = new URLSearchParams(window.location.search);
   const id = params.get("id");
@@ -30,7 +32,9 @@ async function init() {
     );
     if (!res.ok) throw new Error("Product not found");
 
-    const product = await res.json();
+    const data = await res.json();
+
+    const product = data.products ? data.products[0] : data;
     renderProductPage(product);
     loadRelatedProducts();
   } catch (err) {
@@ -42,31 +46,44 @@ async function init() {
 function renderProductPage(p) {
   if (!p) return;
 
-  let mainImg = p.img || "";
-  if (mainImg.startsWith("hhttp")) mainImg = mainImg.replace("hhttp", "http");
-
   document.getElementById("product-title").textContent = p.name;
   const desktopTitle = document.getElementById("product-title-desktop");
   if (desktopTitle) desktopTitle.textContent = p.name;
 
-  const priceWithCard = p.price_with_card || p.price;
-  document.getElementById("product-price-card").textContent =
-    `${priceWithCard} ${p.currency}`;
-  document.getElementById("product-price-regular").textContent =
-    p.price_with_card ? `${p.price} ${p.currency}` : "";
+  document.getElementById("product-price-card").textContent = `${p.price} ₽`;
+  document.getElementById("product-price-regular").textContent = p.oldPrice
+    ? `${p.oldPrice} ₽`
+    : "";
 
   const imgEl = document.getElementById("product-img");
-  imgEl.src = mainImg || "../assets/images/placeholder.png";
+  imgEl.src = p.imageUrl || "../assets/images/placeholder.png";
+  imgEl.onerror = () => {
+    imgEl.src = "../assets/images/placeholder.png";
+  };
 
   const discEl = document.getElementById("product-discount");
   if (p.discount) {
-    discEl.textContent = p.discount;
+    discEl.textContent = `-${p.discount}%`;
     discEl.style.display = "block";
   } else {
     discEl.style.display = "none";
   }
 
   document.getElementById("product-rating").innerHTML = renderStars(p.rating);
+
+  const gallery = p["watching-photo"];
+  if (Array.isArray(gallery) && gallery.length) {
+    const galleryEl = document.getElementById("product-gallery");
+    if (galleryEl) {
+      galleryEl.innerHTML = gallery
+        .map(
+          (url) =>
+            `<img src="${url}" alt="${p.name}" loading="lazy"
+              onerror="this.src='../assets/images/placeholder.png'">`,
+        )
+        .join("");
+    }
+  }
 
   const favBtn = document.getElementById("btn-add-favorite");
   const updateFavUI = () => {
@@ -96,11 +113,11 @@ async function loadRelatedProducts() {
     const res = await fetch(
       `${API_CONFIG.BASE_URL}${API_CONFIG.ENDPOINTS.PRODUCTS}`,
     );
-    const all = await res.json();
+    const data = await res.json();
+    const all = data.products ?? data;
     const related = all.slice(0, 4);
 
     const grid = document.getElementById("related-grid");
-
     grid.innerHTML = related.map((item) => buildCardHTML(item, "../")).join("");
     relatedEl.style.display = "block";
   } catch (e) {

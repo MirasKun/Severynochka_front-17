@@ -1,3 +1,7 @@
+.section-favotites {
+  padding: 40px 0 190px;
+}
+
 .breadcrumb {
   display: flex;
   align-items: center;
@@ -20,8 +24,8 @@
   font-weight: 500;
 }
 .container-favorites {
-    padding-right: 116px;
-    padding-left: 116px;
+  padding-right: 116px;
+  padding-left: 116px;
 }
 
 .favorites-header {
@@ -47,7 +51,7 @@
   font-size: 14px;
   padding: 6px 10px;
   border-radius: 4px;
-  transition: 0.5s
+  transition: 0.5s;
 }
 
 .delete-btn:hover {
@@ -93,8 +97,4 @@
 
 .btn-go-main:hover {
   background-color: #5aaa45;
-}
-
-.section-favotites {
-  padding: 40px 0 80px;
 }

@@ -25,9 +25,8 @@ export function toggleFavorite(product) {
       id: product.id,
       name: product.name,
       price: product.price,
-      price_with_card: product.price_with_card ?? product.price,
-      currency: product.currency,
-      img: product.img,
+      oldPrice: product.oldPrice,
+      imageUrl: product.imageUrl,
       rating: product.rating,
       discount: product.discount,
     });
@@ -42,61 +41,46 @@ export function isFavorite(productId) {
 }
 
 export function renderStars(rating) {
-  if (typeof rating === "string" && rating.startsWith("http")) {
-    return `<img src="${rating}" alt="rating" style="height: 16px; object-fit: contain;">`;
-  }
-
-  let numericRating = parseFloat(rating) || 0;
-  let html = "";
-  for (let i = 1; i <= 5; i++) {
-    const fill = Math.min(100, Math.max(0, (rating - (i - 1)) * 100));
-    const uid = `s${i}_${Math.random().toString(36).slice(2, 6)}`;
-    html += `<svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="${uid}" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="${fill}%" stop-color="#FF6633"/>
-          <stop offset="${fill}%" stop-color="#e0e0e0"/>
-        </linearGradient>
-        <clipPath id="c${uid}">
-          <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
-        </clipPath>
-      </defs>
-      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
-        fill="none" stroke="#FF6633" stroke-width="1.5" stroke-linejoin="round"/>
-      <rect x="0" y="0" width="24" height="24" fill="url(#${uid})" clip-path="url(#c${uid})"/>
-    </svg>`;
-  }
-  return html;
+  if (!Array.isArray(rating)) return "";
+  return rating
+    .map(
+      (url) =>
+        `<img src="${url}" alt="★" style="height:16px;width:16px;object-fit:contain;">`,
+    )
+    .join("");
 }
 
 export function buildCardHTML(product, assetPrefix = "./") {
-  const priceHTML =
-    product.price_with_card && product.price_with_card !== product.price
-      ? `<div class="price-left">
-        <p class="_price">${product.price_with_card} <span>${product.currency}</span></p>
+  const currency = "₽";
+  const priceHTML = product.oldPrice
+    ? `<div class="price-left">
+        <p class="_price">${product.price} <span>${currency}</span></p>
         <p class="with-card">С картой</p>
       </div>
       <div class="price-right">
-        <p class="regular-price">${product.price} <span>${product.currency}</span></p>
+        <p class="regular-price">${product.oldPrice} <span>${currency}</span></p>
         <p class="regular">Обычная</p>
       </div>`
-      : `<div class="price-left" style="width:100%">
-        <p class="_price">${product.price} <span>${product.currency}</span></p>
+    : `<div class="price-left" style="width:100%">
+        <p class="_price">${product.price} <span>${currency}</span></p>
         <p class="with-card">Цена</p>
       </div>`;
 
   const favorited = isFavorite(product.id);
+  const discountLabel = product.discount
+    ? `<div class="discount"><p>-${product.discount}%</p></div>`
+    : "";
 
   return `
     <div class="card" data-id="${product.id}">
       <div class="img-box-card">
         <img
-          src="${product.img}"
+          src="${product.imageUrl}"
           alt="${product.name}"
           loading="lazy"
           onerror="this.classList.add('img-error');this.src='${assetPrefix}assets/images/placeholder.png'"
         >
-        ${product.discount ? `<div class="discount"><p>${product.discount}</p></div>` : ""}
+        ${discountLabel}
         <button class="like-heart ${favorited ? "is-favorite" : ""}" aria-label="В избранное">
           <svg width="20" height="20" viewBox="0 0 24 24"
             fill="${favorited ? "#FF6633" : "none"}" stroke="#FF6633" stroke-width="2">
@@ -112,6 +96,7 @@ export function buildCardHTML(product, assetPrefix = "./") {
       </div>
     </div>`;
 }
+
 export function updateFavoritesCounter() {
   const favCount = document.getElementById("fav-count");
   if (!favCount) return;
