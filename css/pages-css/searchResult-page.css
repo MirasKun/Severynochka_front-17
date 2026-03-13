@@ -1,3 +1,8 @@
+/* фикс "ничего не найдено" чтобы не отображался когда не надо */
+[hidden] {
+  display: none !important;
+}
+
 .breadcrumb {
   display: flex;
   align-items: center;
@@ -69,4 +74,3 @@
 .btn-go-main:hover {
   background-color: #5aaa45;
 }
-

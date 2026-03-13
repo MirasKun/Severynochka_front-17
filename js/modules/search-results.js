@@ -36,6 +36,7 @@ async function init() {
       return;
     }
 
+    emptyState.hidden = true;
     if (resultsCount)
       resultsCount.textContent = `Найдено: ${searchProducts.length} товаров`;
     grid.innerHTML = searchProducts.map(buildCardHTML).join("");
@@ -47,27 +48,32 @@ async function init() {
 }
 
 function buildCardHTML(product) {
-  const priceHTML = product.price_with_card
+  const currency = "₽";
+  const priceHTML = product.oldPrice
     ? `<div class="price-left">
-        <p class="_price">${product.price_with_card} <span>${product.currency}</span></p>
+        <p class="_price">${product.price} <span>${currency}</span></p>
         <p class="with-card">С картой</p>
       </div>
       <div class="price-right">
-        <p class="regular-price">${product.price} <span>${product.currency}</span></p>
+        <p class="regular-price">${product.oldPrice} <span>${currency}</span></p>
         <p class="regular">Обычная</p>
       </div>`
     : `<div class="price-left" style="width:100%">
-        <p class="_price">${product.price} <span>${product.currency}</span></p>
+        <p class="_price">${product.price} <span>${currency}</span></p>
         <p class="with-card">Цена</p>
       </div>`;
 
   const favorited = isFavorite(product.id);
+  const discountLabel = product.discount
+    ? `<div class="discount"><p>-${product.discount}%</p></div>`
+    : "";
 
   return `
     <div class="card" data-id="${product.id}">
       <div class="img-box-card">
-        <img src="${product.img}" alt="${product.name}" loading="lazy">
-        ${product.discount ? `<div class="discount"><p>${product.discount}</p></div>` : ""}
+        <img src="${product.imageUrl}" alt="${product.name}" loading="lazy"
+          onerror="this.src='../assets/images/placeholder.png';">
+        ${discountLabel}
         <button class="like-heart ${favorited ? "is-favorite" : ""}" aria-label="В избранное">
           <svg width="20" height="20" viewBox="0 0 24 24"
             fill="${favorited ? "#FF6633" : "none"}"

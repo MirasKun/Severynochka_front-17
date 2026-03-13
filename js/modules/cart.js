@@ -23,9 +23,10 @@ export function addToCart(product) {
       id: product.id,
       name: product.name,
       price: product.price,
-      price_with_card: product.price_with_card ?? product.price,
-      currency: product.currency,
-      img: product.img,
+
+      oldPrice: product.oldPrice,
+
+      imageUrl: product.imageUrl,
       quantity: 1,
     });
   }
@@ -59,9 +60,14 @@ export function clearCart() {
   return [];
 }
 
+function parsePrice(priceStr) {
+  if (typeof priceStr === "number") return priceStr;
+  return parseFloat(String(priceStr).replace(",", ".")) || 0;
+}
+
 export function getCartTotal(cart) {
   return cart.reduce(
-    (sum, item) => sum + item.price_with_card * item.quantity,
+    (sum, item) => sum + parsePrice(item.price) * item.quantity,
     0,
   );
 }

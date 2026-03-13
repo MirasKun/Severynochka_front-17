@@ -28,7 +28,9 @@ async function loadProducts() {
       `${API_CONFIG.BASE_URL}${API_CONFIG.ENDPOINTS.PRODUCTS}`,
     );
     if (!res.ok) throw new Error(`Ошибка: ${res.status}`);
-    allProducts = await res.json();
+    const data = await res.json();
+    allProducts = data.products ?? data;
+
     renderProducts(allProducts);
   } catch (err) {
     console.error("Ошибка загрузки товаров:", err);
@@ -47,33 +49,36 @@ function renderProducts(products) {
 }
 
 function buildCardHTML(product) {
-  const priceHTML = product.price_with_card
+  const currency = "₽";
+  const priceHTML = product.oldPrice
     ? `<div class="price-left">
-        <p class="_price">${product.price_with_card} <span>${product.currency}</span></p>
+        <p class="_price">${product.price} <span>${currency}</span></p>
         <p class="with-card">С картой</p>
       </div>
       <div class="price-right">
-        <p class="regular-price">${product.price} <span>${product.currency}</span></p>
+        <p class="regular-price">${product.oldPrice} <span>${currency}</span></p>
         <p class="regular">Обычная</p>
       </div>`
     : `<div class="price-left" style="width:100%">
-        <p class="_price">${product.price} <span>${product.currency}</span></p>
+        <p class="_price">${product.price} <span>${currency}</span></p>
         <p class="with-card">Цена</p>
       </div>`;
 
   const favorited = isFavorite(product.id);
-  const cleanImg = product.img.replace(/^hhttp/, "http");
+  const discountLabel = product.discount
+    ? `<div class="discount"><p>-${product.discount}%</p></div>`
+    : "";
 
   return `
     <div class="card" data-id="${product.id}">
       <div class="img-box-card">
-<img 
-  src="${product.img}" 
-  alt="${product.name}" 
-  onerror="this.src='../assets/images/placeholder.png';"
-  loading="lazy"
->
-        ${product.discount ? `<div class="discount"><p>${product.discount}</p></div>` : ""}
+        <img
+          src="${product.imageUrl}"
+          alt="${product.name}"
+          onerror="this.src='../assets/images/placeholder.png';"
+          loading="lazy"
+        >
+        ${discountLabel}
         <button class="like-heart ${favorited ? "is-favorite" : ""}" aria-label="Добавить в избранное">
           <svg width="20" height="20" viewBox="0 0 24 24"
             fill="${favorited ? "#FF6633" : "none"}"
