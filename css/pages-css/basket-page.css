@@ -96,7 +96,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  background-color: #70c05b;
+  background-color: #70C05B;
   height: 40px;
   border-radius: 4px;
   padding: 0 8px;
@@ -107,8 +107,8 @@
   height: 32px;
   border: 1px solid #70c05b;
   border-radius: 4px;
-  background: #70c05b;
-  color: #ffffff;
+  background: #70C05B;
+  color: #FFFFFF;
   font-size: 18px;
   line-height: 1;
   cursor: pointer;
@@ -130,7 +130,7 @@
   text-align: center;
   font-size: 16px;
   font-weight: 600;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .basket-item__subtotal {
@@ -187,7 +187,7 @@
 }
 
 .line-summary-row-height {
-  border: 1px solid #f3f2f1;
+  border: 1px solid #F3F2F1;
 }
 
 .summary-row-summary-row--total {
@@ -212,25 +212,25 @@
 
 .bonuses-summary-row-100 {
   font-size: 12px;
-  color: #70c05b;
+  color: #70C05B;
 }
 
 .bonuses-summary-row-100 b {
   font-weight: 400;
-  color: #70c05b;
+  color: #70C05B;
 }
 
 .cym-severyanochka {
   font-size: 16px;
   font-weight: 400;
-  color: #8f8f8f;
+  color: #8F8F8F;
 }
 
 .btn-order {
   width: 100%;
   height: 48px;
-  background-color: #ff6633;
-  color: #ffffff;
+  background-color: #FF6633;
+  color: #FFFFFF;
   border: none;
   border-radius: 4px;
   font-size: 16px;
@@ -240,8 +240,8 @@
 }
 
 .btn-order:hover {
-  background-color: #fcd5ba;
-  color: #ff6633;
+  background-color: #FCD5BA;
+  color: #FF6633;
 }
 
 .basket-empty {
@@ -278,9 +278,10 @@
 
 .sum-1000-indicator {
   width: 215px;
-  background-color: #d80000;
+  background-color: #D80000;
   color: #fff;
   border-radius: 4px;
   padding: 3px 8px;
   font-size: 11px;
 }
+
