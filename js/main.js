@@ -8,8 +8,6 @@ import {
 } from "./modules/favorites.js";
 import { initSearchInput } from "./modules/search.js";
 
-
-
 let allProducts = [];
 
 const cardBox = document.querySelector(".card-box");
@@ -64,6 +62,7 @@ function buildCardHTML(product) {
       </div>`;
 
   const favorited = isFavorite(product.id);
+  const cleanImg = product.img.replace(/^hhttp/, "http");
 
   return `
     <div class="card" data-id="${product.id}">
@@ -108,14 +107,16 @@ cardBox.addEventListener("click", (e) => {
 
   if (e.target.closest(".like-heart")) {
     toggleFavorite(product);
-
     const heartBtn = card.querySelector(".like-heart");
     const now = isFavorite(id);
     heartBtn.classList.toggle("is-favorite", now);
     heartBtn
       .querySelector("path")
       .setAttribute("fill", now ? "#FF6633" : "none");
+    return;
   }
+
+  window.location.href = `/pages/product.html?id=${id}`;
 });
 
 init();
