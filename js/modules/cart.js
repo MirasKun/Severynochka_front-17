@@ -89,3 +89,4 @@ export function updateCartCounter(countElement) {
     countElement.hidden = true;
   }
 }
+
